@@ -1,0 +1,210 @@
+.header {
+  .container {
+    @media (max-width: 1260px) {
+      &::before {
+        top: 780px;
+      }
+      &::after {
+        top: 800px;
+      }
+    }
+    @media (max-width: 536px) {
+      &::before {
+        height: 4px;
+        top: 329px;
+        width: 81px;
+      }
+      &::after {
+        height: 4px;
+        top: 338px;
+        width: 119px;
+      }
+    }
+  }
+  &__logo {
+    @media (max-width: 1260px) {
+      top: 15px;
+    }
+    img {
+      @media (max-width: 1777px) {
+        width: 230px;
+      }
+      @media (max-width: 1260px) {
+        width: 150px;
+      }
+    }
+    @media (max-width: 536px) {
+      width: 72px;
+      right: 6px;
+      top: 6px;
+    }
+  }
+  &__contacts {
+    @media (max-width: 1488px) {
+      flex-direction: column;
+      bottom: 20px;
+    }
+    @media (max-width: 1260px) {
+      position: static;
+      flex-direction: row;
+      padding: 15px 15px 25px;
+    }
+    @media (max-width: 870px) {
+      flex-direction: column;
+    }
+  }
+  &__contact {
+    @media (max-width: 1870px) {
+      margin-right: 15px;
+      font-size: 23px;
+    }
+    @media (max-width: 1610px) {
+      font-size: 20px;
+      margin-right: 10px;
+    }
+    @media (max-width: 1565px) {
+      &:first-child {
+        width: 190px;
+      }
+      &:nth-child(2) {
+        width: 285px;
+      }
+      &:nth-child(3) {
+        width: 290px;
+      }
+    }
+    @media (max-width: 1488px) {
+      margin-top: 23px;
+    }
+    @media (max-width: 904px) {
+      font-size: 18px;
+    }
+    @media (max-width: 536px) {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px;
+      &:first-child {
+        &::before {
+          display: none;
+        }
+      }
+      &:nth-child(2) {
+        &::before {
+          width: 100px;
+          height: 2px;
+          left: -15px;
+        }
+      }
+      &:nth-child(3) {
+        &::before {
+          width: 100px;
+          height: 2px;
+          left: -15px;
+        }
+      }
+    }
+  }
+  &__images {
+    @media (max-width: 1260px) {
+      padding: 0 15px;
+    }
+  }
+  .image-left {
+    @media (max-width: 1870px) {
+      max-width: 900px;
+    }
+    @media (max-width: 1777px) {
+      height: 633px;
+    }
+    @media (max-width: 1730px) {
+      max-width: 850px;
+    }
+    @media (max-width: 1677px) {
+      height: 620px;
+    }
+    @media (max-width: 1595px) {
+      max-width: 830px;
+    }
+    @media (max-width: 1488px) {
+      width: 700px;
+      height: 615px;
+    }
+    @media (max-width: 1385px) {
+      height: 600px;
+    }
+    @media (max-width: 1260px) {
+      display: none;
+    }
+  }
+  .image-right {
+    @media (max-width: 1870px) {
+      max-width: 760px;
+    }
+    @media (max-width: 1777px) {
+      max-width: 700px;
+      margin-top: 250px;
+    }
+    @media (max-width: 1677px) {
+      max-width: 630px;
+      height: 700px;
+      &::after {
+        top: -4.3%;
+      }
+    }
+    @media (max-width: 1260px) {
+      max-width: 100%;
+      margin-top: 160px;
+      margin-left: 0;
+    }
+    @media (max-width: 751px) {
+      &::before {
+        left: 95px;
+      }
+      &::after {
+        left: 115px;
+      }
+    }
+    @media (max-width: 536px) {
+      &::before {
+        width: 4px;
+        height: 80px;
+      }
+      &::after {
+        width: 4px;
+        left: 104px;
+        height: 54px;
+        top: -17px;
+      }
+    }
+    @media (max-width: 536px) {
+      margin-top: 85px;
+      height: 286px;
+    }
+  }
+  &__title {
+    @media (max-width: 1677px) {
+      font-size: 55px;
+      line-height: 60px;
+    }
+    @media (max-width: 751px) {
+      font-size: 40px;
+      left: 0;
+      padding: 0 30px;
+    }
+    @media (max-width: 536px) {
+      width: 300px;
+      font-weight: 800;
+      font-size: 30px;
+      line-height: 30px;
+      letter-spacing: 0.02em;
+      bottom: 40px;
+      left: 30px;
+    }
+    @media (max-width: 420px) {
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 23px;
+      letter-spacing: 0.02em;
+    }
+  }
+}
