@@ -12,3 +12,13 @@
 //   })
 // }
 // mobileMenu();
+
+// $(function(){
+//   $('.cases__slider').slick({
+//     infinite: true,
+//     fade: true,
+//     dots: true,
+//     prevArrow: '<img class="slider-arrows slider-arrows__left"src="img/slider-arrows/arrow-left.svg" alt="">',
+//     nextArrow: '<img class="slider-arrows slider-arrows__right"src="img/slider-arrows/arrow-right.svg" alt="">',
+//   });
+// });

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AG</title>
     <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="slick/slick.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,7 +15,7 @@
   </head>
 
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container">
         <div class="mobile-menu d-none">
           <button class="mobile-menu__close-btn"></button>
@@ -258,62 +259,126 @@
           <div class="service__img-right"></div>
         </div>
       </div>
-    </section>
+    </section> -->
     <section class="cases">
       <div class="container">
-        <div class="cases__title-wrapper">
-          <h2 class="cases__title">Кейсы наших клиентов</h2>
-          <p class="cases__text">
-            «наша ценность это многолетние сотрудничество и доверие, поэтому мы
-            всегда смотрим на задачу глазами нашего клиента»
-          </p>
-        </div>
-        <div class="cases__wrapper">
-          <div class="cases__item">
-            <div class="img-wrapper">
-              <img src="img/cases/case1.svg" alt="" />
+        <div class="cases__slider">
+          <div class="cases__slider-item">
+            <div class="cases__title-wrapper">
+              <h2 class="cases__title">Кейсы наших клиентов</h2>
+              <p class="cases__text">
+                «наша ценность это многолетние сотрудничество и доверие, поэтому
+                мы всегда смотрим на задачу глазами нашего клиента»
+              </p>
             </div>
-            <p class="cases__descr">
-              ООО «Эдванс» для ЖБИ завода ПНК ГРУПП обеспечивает бесперебойную
-              поставку щебня высокого качества более 3 лет. За время работы
-              всегда достигается необходимые объемы поставок и точность их
-              доставки.
-            </p>
-          </div>
-          <div class="cases__item">
-            <div class="img-wrapper">
-              <img src="img/cases/case2.svg" alt="" />
+            <div class="cases__wrapper">
+              <div class="cases__item">
+                <div class="case-number">01</div>
+                <div class="img-wrapper">
+                  <img src="img/cases/case1.svg" alt="" />
+                </div>
+                <p class="cases__descr">
+                  ООО «Эдванс» для ЖБИ завода ПНК ГРУПП обеспечивает
+                  бесперебойную поставку щебня высокого качества более 3 лет. За
+                  время работы всегда достигается необходимые объемы поставок и
+                  точность их доставки.
+                </p>
+              </div>
+              <div class="cases__item">
+                <div class="case-number">02</div>
+                <div class="img-wrapper">
+                  <img src="img/cases/case2.svg" alt="" />
+                </div>
+                <p class="cases__descr">
+                  Для компании «РСК» наша компания осуществляет поставки
+                  известнякового щебня для строительства 5 участка М12 и
+                  гранитные щебни для участка М12 в р-не города Владимир.
+                </p>
+              </div>
+              <div class="cases__item">
+                <div class="case-number">03</div>
+                <div class="img-wrapper"></div>
+                <p class="cases__descr">
+                  Команда ООО «Эдванс» в короткие сроки осуществляла
+                  производство и доставку песчано-щебеночных смесей специально
+                  произведенных на перевалочных базах по ТУ заказчика.
+                </p>
+              </div>
+              <div class="cases__item">
+                <div class="case-number">04</div>
+                <div class="img-wrapper">
+                  <img src="img/cases/case3.svg" alt="" />
+                </div>
+                <p class="cases__descr">
+                  АО“ГК ЕКС” регулярно требуется снабжение большого кол-ва
+                  объектов. Специально для клиента были разработаны критерии
+                  оценки заказа для его согласования в день обращения. За 21/22
+                  годы наша компания обеспечила материалами более 70 объектов
+                  клиента в Москве и Московской области.
+                </p>
+              </div>
             </div>
-            <p class="cases__descr">
-              Для компании «РСК» наша компания осуществляет поставки
-              известнякового щебня для строительства 5 участка М12 и гранитные
-              щебни для участка М12 в р-не города Владимир.
-            </p>
           </div>
-          <div class="cases__item">
-            <div class="img-wrapper"></div>
-            <p class="cases__descr">
-              Команда ООО «Эдванс» в короткие сроки осуществляла производство и
-              доставку песчано-щебеночных смесей специально произведенных на
-              перевалочных базах по ТУ заказчика.
-            </p>
-          </div>
-          <div class="cases__item">
-            <div class="img-wrapper">
-              <img src="img/cases/case3.svg" alt="" />
+          <div class="cases__slider-item">
+            <div class="container">
+              <div class="stripes-wrapper">
+                <div class="stripes stripes1"></div>
+                <div class="stripes stripes2"></div>
+              </div>
+              <div class="cases__title-wrapper">
+                <h2 class="cases__title">Кейсы наших клиентов</h2>
+                <p class="cases__text">
+                  «наша ценность это многолетние сотрудничество и доверие,
+                  поэтому мы всегда смотрим на задачу глазами нашего клиента»
+                </p>
+              </div>
+              <div class="cases__wrapper">
+                <div class="cases__item">
+                  <div class="case-number">05</div>
+                  <div class="img-wrapper">
+                    <img src="img/cases/case4.svg" alt="" />
+                  </div>
+                  <p class="cases__descr">
+                    ООО «Эдванс» осуществляет поставки щебеночно-песчаных смесей
+                    и известнякового щебня для строительных объектов ООО
+                    «Трансстроймеханизация» В 2022 году наша компания
+                    осуществляла поставки на объекты М5 Урал и обход Ногинска
+                  </p>
+                </div>
+                <div class="cases__item">
+                  <div class="case-number">06</div>
+                  <div class="img-wrapper">
+                    <img src="img/cases/case5.svg" alt="" />
+                  </div>
+                  <p class="cases__descr">
+                    Компания СТГ Магистраль строит участок скоростной трассы М12
+                    от г.Орехово-Зуево до г. Владимир. ЗА 2021 – 2022 год на
+                    данный участок трассы наша компания осуществила поставки
+                    более 70 000 тн гранитного ЩПС и более 80 000 тн шлакового
+                    ЩПС.
+                  </p>
+                </div>
+                <div class="cases__item">
+                  <div class="case-number">07</div>
+                  <div class="img-wrapper">
+                    <img src="img/cases/case6.svg" alt="" />
+                  </div>
+                  <p class="cases__descr">
+                    СиАрСиСи Рус выполняет работы по строительству 5 участка
+                    новой федеральной скоростной автомагистрали М12 Москва –
+                    Казань.В рамках данного проекта наша компания занимается
+                    автомобильной поставкой известнякового щебня для
+                    строительства основного хода и временных дорог.
+                  </p>
+                </div>
+              </div>
             </div>
-            <p class="cases__descr">
-              АО“ГК ЕКС” регулярно требуется снабжение большого кол-ва объектов.
-              Специально для клиента были разработаны критерии оценки заказа для
-              его согласования в день обращения. За 21/22 годы наша компания
-              обеспечила материалами более 70 объектов клиента в Москве и
-              Московской области.
-            </p>
           </div>
         </div>
       </div>
     </section>
 
     <script src="js/main.min.js"></script>
+    <script src="slick/slick.min.js"></script>
   </body>
 </html>

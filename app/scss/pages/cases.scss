@@ -1,11 +1,117 @@
 .cases {
+  .container {
+    height: 1040px;
+  }
+  .stripes-wrapper {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background: transparent;
+    right: 0;
+    top: 50%;
+    .stripes {
+      position: relative;
+    }
+    .stripes1 {
+      &::before {
+        position: absolute;
+        content: "";
+        width: 311px;
+        height: 6px;
+        background: #d18929;
+        right: -15px;
+        top: 144px;
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        width: 211px;
+        height: 6px;
+        background: #d18929;
+        right: -15px;
+        top: 182px;
+      }
+    }
+    .stripes2 {
+      &::before {
+        position: absolute;
+        content: "";
+        width: 79px;
+        height: 6px;
+        background: #d18929;
+        right: -15px;
+        bottom: -344px;
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        width: 116px;
+        height: 6px;
+        background: #d18929;
+        right: -15px;
+        bottom: -367px;
+      }
+    }
+  }
+  &__slider-item:nth-child(1) {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 200px;
+      height: 6px;
+      background: #d18929;
+      left: 0;
+      top: 54%;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      width: 294px;
+      height: 6px;
+      background: #d18929;
+      left: 0;
+      top: 53%;
+    }
+  }
+  &__slider-item:nth-child(2) {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 122px;
+      height: 6px;
+      background: #d18929;
+      left: 0;
+      top: 54%;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      width: 180px;
+      height: 6px;
+      background: #d18929;
+      left: 0;
+      top: 53%;
+    }
+  }
   &__title {
+    position: relative;
     font-weight: 600;
     font-size: 50px;
     line-height: 59px;
     letter-spacing: 0.02em;
     text-transform: uppercase;
     margin-right: 260px;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 391px;
+      height: 6px;
+      background: #d18929;
+      left: -90px;
+      bottom: 9px;
+    }
     &-wrapper {
       padding-top: 42px;
       padding-left: 90px;
@@ -27,13 +133,24 @@
     display: flex;
     flex-wrap: wrap;
     padding-left: 253px;
+    margin-bottom: 133px;
   }
   &__item {
+    position: relative;
     max-width: 590px;
     width: 100%;
     position: relative;
     padding-top: 155px;
     margin-right: 174px;
+  }
+  .case-number {
+    position: absolute;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 27px;
+    letter-spacing: 0.01em;
+    color: #d18929;
+    left: -46px;
   }
   .img-wrapper {
     position: absolute;
@@ -53,5 +170,42 @@
     display: flex;
     align-items: center;
     letter-spacing: 0.01em;
+  }
+  .slider-arrows {
+    position: absolute;
+    z-index: 10;
+    bottom: 15px;
+  }
+  .slider-arrows__left {
+    left: 30px;
+    left: 42%;
+  }
+  .slider-arrows__right {
+    right: 42%;
+  }
+  .slick-dots {
+    position: absolute;
+    bottom: 43px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 60px;
+    .slick-active {
+      #slick-slide-control01,
+      #slick-slide-control00 {
+        background: #d18929;
+      }
+    }
+    #slick-slide-control01,
+    #slick-slide-control00 {
+      font-size: 0;
+      width: 24px;
+      height: 24px;
+      left: 128.39px;
+      top: 25.2px;
+      background: #eccda5;
+      border-radius: 50%;
+    }
   }
 }
