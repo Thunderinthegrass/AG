@@ -1,0 +1,183 @@
+.team {
+  .container {
+    display: flex;
+  }
+  &__left {
+    margin-right: 72px;
+  }
+  .title-wrapper {
+    position: absolute;
+    top: 36px;
+    left: 90px;
+  }
+  &__title {
+    position: relative;
+    width: 745px;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 70px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin-bottom: 46px;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 391px;
+      height: 6px;
+      background: #d18929;
+      left: -90px;
+      bottom: -4px;
+    }
+  }
+  &__members {
+    position: relative;
+    width: 160px;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 33px;
+      height: 73px;
+      background: #d18929;
+      left: -18px;
+      top: -19px;
+    }
+    &-wrapper {
+      max-width: 1163px;
+      width: 100%;
+      padding-left: 109px;
+      padding-top: 181px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 125px;
+    }
+    &-img {
+      width: 160px;
+      height: 180px;
+      margin-bottom: 10px;
+    }
+    &-name {
+      margin-bottom: 12px;
+      p {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        text-transform: capitalize;
+      }
+    }
+    &-position {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      text-transform: capitalize;
+      color: #d18929;
+    }
+  }
+  &__bottom-img {
+    position: relative;
+    width: 1164px;
+    height: 425px;
+    background-image: url(../img/team/Rectangle.jpg);
+    &::before{
+      position: absolute;
+      content: "";
+      width: 214px;
+      height: 65px;
+      background-image: url(../../img/team/lines-left.svg);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: cover;
+      top: -5px;
+      left: 0;
+    }
+    &::after{
+      position: absolute;
+      content: "";
+      height: 296px;
+      width: 65px;
+      background-image: url(../../img/team/lines-right.svg);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: cover;
+      bottom: 0;
+      right: 0;
+    }
+  }
+  &__right {
+    max-width: 550px;
+    width: 100%;
+    height: 100%;
+    padding-top: 42px;
+    background: #F9F9F9;
+    &-img {
+      max-width: 550px;
+      width: 100%;
+      margin-bottom: 35px;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 25px;
+        left: -130px;
+        width: 200px;
+        height: 5px;
+        background: #d18929;
+        z-index: 1;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        left: -130px;
+        top: 45px;
+        width: 200px;
+        height: 5px;
+        background: #d18929;
+        z-index: 1;
+      }
+    }
+    .name {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      text-transform: capitalize;
+      margin-bottom: 5px;
+      padding-left: 17px;
+    }
+    .position {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      color: #d18929;
+      margin-bottom: 37px;
+      padding-left: 17px;
+    }
+    .text {
+      position: relative;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 38px;
+      margin-bottom: 110px;
+      padding-left: 17px;
+      &::before{
+        position: absolute;
+        content: "";
+        width: 23px;
+        height: 18px;
+        background-image: url(../../img/team/quotes.svg);
+        top: -26px;
+      }
+      &::after{
+        position: absolute;
+        content: "";
+        width: 23px;
+        height: 18px;
+        background-image: url(../../img/team/quotes.svg);
+        bottom: -25px;
+        right: 22px;
+      }
+      span{
+        color: #d18929;
+      }
+    }
+  }
+}
