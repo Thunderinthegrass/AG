@@ -1,16 +1,16 @@
-*{
+* {
   box-sizing: border-box;
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 27px;
-	color: #000000;
+  color: #000000;
   font-size: 25px;
 }
-section{
+section {
   padding: 20px;
 }
 .wrapper {
@@ -33,7 +33,7 @@ section{
   border: 1px solid #000000;
   position: relative;
 }
-.view-rightsidemenu{
+.view-rightsidemenu {
   position: fixed;
   right: 0;
   top: 100px;
@@ -43,6 +43,19 @@ section{
   border-radius: 20px 2px 2px 2px;
   cursor: pointer;
 }
-.d-none{
+.d-none {
   display: none;
+}
+.page-count {
+  display: none;
+  position: absolute;
+  top: 9px;
+  right: 14px;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 30px;
+  color: #d18929;
+  @media (max-width: 500px){
+    display: block;
+  }
 }

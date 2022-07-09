@@ -1,4 +1,5 @@
 .supplies {
+  font-size: 25px;
   .container {
     display: flex;
   }
@@ -43,12 +44,14 @@
       line-height: 47px;
       letter-spacing: 0.02em;
       margin-bottom: 9px;
+      &_mobile{
+        display: none;
+      }
     }
     &-text {
       position: relative;
       width: 721px;
       font-weight: 400;
-      font-size: 25px;
       line-height: 38px;
       letter-spacing: 0.02em;
       &::before {
@@ -67,7 +70,6 @@
   .list {
     position: relative;
     font-weight: 700;
-    font-size: 25px;
     line-height: 29px;
     letter-spacing: 0.01em;
     color: #d18929;
@@ -98,6 +100,9 @@
     &__right {
       display: flex;
       padding-top: 4px;
+      &_mobile{
+        display: none;
+      }
     }
     &__list-left {
       margin-right: 94px;
@@ -129,6 +134,9 @@
       line-height: 47px;
       letter-spacing: 0.01em;
       margin-bottom: 51px;
+      // &_mobile{
+      //   display: none;
+      // }
     }
     .basic__btn {
       position: relative;
