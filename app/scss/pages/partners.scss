@@ -44,6 +44,9 @@
   .img-wrapper {
     display: flex;
     flex-direction: column;
+    &_mobile{
+      display: none;
+    }
   }
   .img-row {
     margin-bottom: 46px;

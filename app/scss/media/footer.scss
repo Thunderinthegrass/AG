@@ -1,0 +1,124 @@
+.footer {
+  @media (max-width: 1850px) {
+    &__left {
+      margin-left: 30px;
+    }
+  }
+  @media (max-width: 1790px) {
+    &__left {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    &__right {
+      margin-right: 20px;
+    }
+    &__inner {
+      flex-wrap: nowrap;
+    }
+  }
+  @media (max-width: 1520px) {
+    .container {
+      padding-top: 30px;
+    }
+    &__title {
+      font-size: 35px;
+      line-height: 35px;
+      padding-left: 12px;
+    }
+    &__contacts {
+      &::after {
+        width: 100%;
+      }
+    }
+    .info__qr {
+      width: 120px !important;
+      height: 120px;
+      margin-bottom: 12px;
+      img {
+        width: 120px;
+        height: 120px;
+      }
+    }
+    .info__item {
+      max-width: 488px;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      background: transparent;
+      &:nth-child(1) {
+        margin-right: 20px;
+      }
+    }
+    .info__link-title {
+      margin-bottom: 30px;
+    }
+    &__map {
+      iframe {
+        max-width: 1017px;
+        width: 100%;
+      }
+    }
+  }
+  @media (max-width: 1000px) {
+    .container {
+      padding-bottom: 50px;
+    }
+    &__inner {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__right {
+      margin-right: 0;
+    }
+  }
+  @media (max-width: 500px) {
+    padding: 0 10px 33px;
+    &__title {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 23px;
+      letter-spacing: 0.02em;
+    }
+    &__map {
+      display: none;
+    }
+    &__contacts {
+      padding-top: 54px;
+      padding-left: 24px;
+      height: auto;
+      padding-bottom: 56px;
+    }
+    &__contact {
+      margin-bottom: 22px;
+      font-size: 20px;
+      line-height: 21px;
+      letter-spacing: 0.01em;
+      &-title {
+        font-weight: 700;
+      }
+      &::after {
+        left: -12px;
+        width: 3px;
+        height: 60px;
+        bottom: auto;
+        top: 5px;
+      }
+    }
+    &__info-wrapper {
+      flex-direction: column;
+    }
+    .info__item {
+      &:nth-child(1) {
+        margin-right: 0;
+        margin-bottom: 50px;
+      }
+    }
+    .copyright {
+      font-weight: 300;
+      font-size: 10px;
+      line-height: 12px;
+      margin-top: 10px;
+    }
+  }
+}
