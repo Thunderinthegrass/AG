@@ -44,7 +44,11 @@ section {
   cursor: pointer;
 }
 .d-none {
-  display: none;
+  display: none!important;
+}
+.d-block{
+  display: block!important;
+  opacity: 1!important;
 }
 .page-count {
   display: none;

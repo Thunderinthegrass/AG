@@ -1,4 +1,8 @@
 .team {
+  position: relative;
+  &-logo{
+    display: none;
+  }
   .container {
     display: flex;
   }
@@ -41,7 +45,7 @@
       left: -18px;
       top: -19px;
     }
-    &-wrapper {
+    &-inner {
       max-width: 1163px;
       width: 100%;
       padding-left: 109px;
@@ -75,9 +79,16 @@
   }
   &__bottom-img {
     position: relative;
-    width: 1164px;
+    width: 1163px;
     height: 425px;
     background-image: url(../img/team/Rectangle.jpg);
+    &_mobile{
+      background-image: url(../img/team/mobile/bottom.jpg);
+      height: 95px;
+      width: 100%;
+      z-index: 1000;
+      display: none;
+    }
     &::before{
       position: absolute;
       content: "";
@@ -142,6 +153,9 @@
       text-transform: capitalize;
       margin-bottom: 5px;
       padding-left: 17px;
+      &_mobile{
+        display: none;
+      }
     }
     .position {
       font-weight: 400;
@@ -150,6 +164,9 @@
       color: #d18929;
       margin-bottom: 37px;
       padding-left: 17px;
+      &_mobile{
+        display: none;
+      }
     }
     .text {
       position: relative;

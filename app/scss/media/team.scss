@@ -1,0 +1,234 @@
+.team {
+  @media (max-width: 1845px) {
+    &__bottom-img {
+      width: 1063px;
+    }
+  }
+  @media (max-width: 1745px) {
+    &__bottom-img {
+      width: 963px;
+    }
+  }
+  @media (max-width: 1745px) {
+    &__bottom-img {
+      max-width: 1163px;
+      width: 100%;
+      height: 380px;
+    }
+    &__members {
+      margin-right: 5px;
+    }
+  }
+  @media (max-width: 1620px) {
+    &__members-wrapper {
+      padding-left: 60px;
+    }
+  }
+  @media (max-width: 1570px) {
+    &__members-inner {
+      padding-left: 40px;
+      justify-content: left;
+    }
+    &__members {
+      margin-right: 20px;
+    }
+    &__left {
+      margin-right: 40px;
+    }
+    &__bottom-img {
+      height: 350px;
+      display: none;
+    }
+    &__members-wrapper {
+      margin-bottom: 40px;
+      padding-left: 0;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  @media (max-width: 1250px) {
+    &__members-inner {
+      flex-wrap: wrap;
+    }
+    &__bottom-img {
+      height: 150px;
+    }
+    &__right-img {
+      &::before {
+        left: 0;
+      }
+      &::after {
+        left: 0;
+      }
+    }
+  }
+  @media (max-width: 1211px) {
+    &__title {
+      width: auto;
+      font-size: 35px;
+      line-height: 50px;
+    }
+    &__bottom-img {
+      display: none;
+    }
+    &__left {
+      padding-left: 60px;
+    }
+    &__members-inner {
+      padding-top: 0;
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+    &__right {
+      padding-top: 0;
+    }
+    &__members {
+      margin-bottom: 30px;
+      margin-right: 30px;
+      &-wrapper {
+        margin-bottom: 0;
+      }
+    }
+    .container {
+      padding-top: 120px;
+    }
+  }
+  @media (max-width: 900px) {
+    .container {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    &__members-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__members-inner {
+      max-width: 570px;
+      width: 100%;
+    }
+    &__members {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    &__right {
+      background: transparent;
+      .text {
+        margin-bottom: 76px;
+      }
+    }
+  }
+  @media (max-width: 690px) {
+    &__members-inner {
+      max-width: 360px;
+      width: 100%;
+    }
+  }
+  @media (max-width: 500px) {
+    margin-top: 30px;
+    padding: 0 10px 30px;
+    .page-count{
+      display: block;
+      right: auto;
+      top: 7px;
+      left: 20px;
+    }
+    .team-logo {
+      background-image: url(../img/team/mobile/logo.svg);
+      display: block;
+      height: 96px;
+      width: 100px;
+      position: absolute;
+      top: 66px;
+      right: 20px;
+    }
+    .container {
+      padding-top: 81px;
+    }
+    .title-wrapper {
+      left: 33px;
+      top: 34px;
+    }
+    &__title {
+      font-size: 20px;
+      line-height: 23px;
+      letter-spacing: 0.02em;
+      &::after {
+        display: none;
+      }
+    }
+    &__members {
+      margin-bottom: 36px;
+    }
+    &__members-inner {
+      max-width: 180px;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    &__bottom-img_mobile {
+      display: block;
+    }
+    .name,
+    .position {
+      display: none;
+    }
+    .name_mobile {
+      display: block;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      padding-left: 13px;
+      margin-bottom: 3px;
+      span {
+        display: block;
+      }
+    }
+    .position_mobile {
+      display: block;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      padding-left: 13px;
+      color: #d18929;
+      margin-bottom: 16px;
+      span {
+        display: block;
+      }
+    }
+    &__right {
+      padding-left: 10px;
+      padding-right: 10px;
+      .text {
+        padding: 0 40px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 110%;
+        text-align: center;
+        &::before {
+          top: -7px;
+          left: 20px;
+        }
+        &::after {
+          right: 30px;
+          bottom: -2px;
+        }
+      }
+      &-img {
+        margin-bottom: 30px;
+        &::before {
+          width: 100px;
+          height: 4px;
+          left: 0;
+          top: 67px;
+        }
+        &::after {
+          width: 100px;
+          height: 4px;
+          left: 0;
+          top: 77px;
+        }
+      }
+    }
+  }
+}
