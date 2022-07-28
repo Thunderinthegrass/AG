@@ -47,7 +47,8 @@ function images() {
 function scripts() {
   return src([
     'node_modules/jquery/dist/jquery.js',
-    'app/js/main.js'
+    'app/js/main.js',
+    'app/js/slick.min.js'
   ])
     .pipe(concat('main.min.js'))
     .pipe(uglify())
@@ -63,7 +64,7 @@ function html() {
 
 function styles() {
   return src('app/scss/style.scss')
-      .pipe(scss({outputStyle: 'compressed'}))
+      .pipe(scss({outputStyle: 'expanded'}))
       .pipe(concat('style.min.css'))
       .pipe(autoprefixer({
         overrideBrowserslist: ['last 10 version'],

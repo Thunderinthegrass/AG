@@ -12,35 +12,57 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <header class="header">
       <div class="container">
+        <nav class="header__nav">
+          <ul class="header__menu menu">
+            <li class="header__menu-item">
+              <a class="menu__link" href="#supplies">Продукты</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="menu__link" href="#service">Сервис</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="menu__link" href="#cases">Кейсы</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="menu__link" href="#team">Команда</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="menu__link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
         <div class="mobile-menu d-none">
           <button class="mobile-menu__close-btn"></button>
           <div class="mobile-menu__title">меню</div>
           <ul class="mobile-menu__list">
             <li class="mobile-menu__item">
-              <a class="mobile-menu__link" href="#">Продукты</a>
+              <a class="mobile-menu__link" href="#supplies">Продукты</a>
             </li>
             <li class="mobile-menu__item">
-              <a class="mobile-menu__link" href="#">Сервис</a>
+              <a class="mobile-menu__link" href="#service">Сервис</a>
             </li>
             <li class="mobile-menu__item">
-              <a class="mobile-menu__link" href="#">Кейсы</a>
+              <a class="mobile-menu__link" href="#cases">Кейсы</a>
             </li>
             <li class="mobile-menu__item">
-              <a class="mobile-menu__link" href="#">Команда</a>
+              <a class="mobile-menu__link" href="#team">Команда</a>
             </li>
             <li class="mobile-menu__item">
-              <a class="mobile-menu__link" href="#">Контакты</a>
+              <a class="mobile-menu__link" href="#contacts">Контакты</a>
             </li>
           </ul>
         </div>
         <button class="mobile-menu__btn"></button>
         <a class="header__logo" href="#">
-          <img src="img/logo.svg" alt="логотип" />
+          <img src="img/header/logo.svg" alt="логотип" />
         </a>
         <div class="header__images">
           <div class="header__image image-left">
@@ -69,7 +91,7 @@
         </ul>
       </div>
     </header>
-    <section class="supplies">
+    <section id="supplies" class="supplies">
       <div class="container">
         <div class="page-count">01</div>
         <div class="supplies__img"></div>
@@ -177,18 +199,22 @@
                 сроки наладить поставки в разных регионах нашей страны.
               </div>
               <div class="descr__img">
-
+  
               </div>
             </div>
             <div class="delivery__advantages advantages">
               <ul class="advantages__list">
                 <li class="advantages__item">Согласуем параметры материала и подберем производителя.
                   При необходимости организуем отправку образцов для испытаний. 
-                  </li>
-                <li class="advantages__item">В зависимости от проекта подберем удобные перевалки щебня. За 2020–2022 год мы сотрудничали с 14 перевалками в 6 регионах РФ. </li>
-                <li class="advantages__item">Мы работаем с обязательным диспетчерским сопровождением «24 / 7». Поставка на любой проект всегда происходит с правильно оформленными документами. 
                 </li>
-                <li class="advantages__item">На ваш выбор мы можем осуществлять поставки с любым базисом доставки. 
+                <li class="advantages__item">
+                  В зависимости от проекта подберем удобные перевалки щебня. За 2020–2022 год мы сотрудничали с 14 перевалками в 6 регионах РФ. 
+                </li>
+                <li class="advantages__item">
+                  Мы работаем с обязательным диспетчерским сопровождением «24 / 7». Поставка на любой проект всегда происходит с правильно оформленными документами. 
+                </li>
+                <li class="advantages__item">
+                  На ваш выбор мы можем осуществлять поставки с любым базисом доставки. 
                 </li>
               </ul>
               <div class="advantages__btn-wrapper">
@@ -202,7 +228,7 @@
         <div class="delivery__img-right"></div>
       </div>
     </section>
-    <section class="service">
+    <section id="service" class="service">
       <div class="container">
         <div class="page-count">03.</div>
         <h2 class="service__title_mobile">Наш сервис</h2>
@@ -222,28 +248,33 @@
             <div class="service__benefits benefits">
               <div class="benefits__item">
                 <img src="img/service/planet.svg" alt="icon" class="benefits__img">
-                  <p class="benefits__text">организуем поставки 
+                  <p class="benefits__text">
+                    организуем поставки 
                     на территории от Белоруссии до Урала и от Петербурга 
-                    до Крыма.</p>
+                    до Крыма.
+                  </p>
                 </img>
               </div>
               <div class="benefits__item">
                 <img src="img/service/tax.svg" alt="icon" class="benefits__img">
-                  <p class="benefits__text">мы раскрыли налоговую тайну, 
+                  <p class="benefits__text">
+                    мы раскрыли налоговую тайну, 
                     и платим все налоги.  
-                    </p>
+                  </p>
                 </img>
               </div>
               <div class="benefits__item">
                 <img src="img/service/doc.svg" alt="icon" class="benefits__img">
-                  <p class="benefits__text">наша компания предоставляет все оригиналы УПД и ТТН. 
+                  <p class="benefits__text">
+                    наша компания предоставляет все оригиналы УПД и ТТН. 
                     А также работает По ЭДО.
-                    </p>
+                  </p>
                 </img>
               </div>
               <div class="benefits__item">
               <img src="img/service/call.svg" alt="icon" class="benefits__img">
-                  <p class="benefits__text">наши сотрудники на связи 24/7. В любое время мы готовы оказать вам поддержку. 
+                  <p class="benefits__text">
+                    наши сотрудники на связи 24/7. В любое время мы готовы оказать вам поддержку. 
                   </p>
                 </img>
               </div>
@@ -252,7 +283,8 @@
                   <p class="benefits__text">мы тщательно выбираем наших поставщиков 
                     и перевозчиков.
                     Мы 
-                    не «играем» с качеством. </p>
+                    не «играем» с качеством. 
+                  </p>
                 </img>
               </div>
               <div class="benefits__item">
@@ -281,7 +313,7 @@
         </div>
       </div>
     </section>
-    <section class="cases">
+    <section id="cases" class="cases">
       <div class="container">
         <div class="cases__slider">
           <div class="cases__slider-item">
@@ -297,7 +329,7 @@
               <div class="cases__item">
                 <div class="case-number">01</div>
                 <div class="img-wrapper">
-                  <img src="img/cases/case1.svg" alt="icon" />
+                  <img src="img/cases/case1.svg" alt="icon"/>
                 </div>
                 <p class="cases__descr">
                   ООО «Эдванс» для ЖБИ завода ПНК ГРУПП обеспечивает
@@ -362,7 +394,7 @@
                 <div class="cases__item">
                   <div class="case-number">05</div>
                   <div class="img-wrapper">
-                    <img src="img/cases/case4.svg" alt="icon" />
+                    <img src="img/cases/case4.svg" alt="icon"/>
                   </div>
                   <p class="cases__descr">
                     ООО «Эдванс» осуществляет поставки щебеночно-песчаных смесей
@@ -403,7 +435,7 @@
         </div>
       </div>
     </section>
-    <section class="team">
+    <section id="team" class="team">
       <div class="title-wrapper">
         <h2 class="team__title">Наша команда</h2>
       </div>
@@ -507,134 +539,70 @@
     <section class="partners">
       <div class="container">
         <div class="page-count">07.</div>
-        <div class="partners__wrapper">
-          <div class="partners__left">
-            <h2 class="partners__title">Нас рекомендуют</h2>
-            <div class="img-wrapper img-wrapper_mobile">
-              <div class="img-row img-row-1">
-                <img src="img/partners/rjd.svg" alt="" class="partners__item" />
-                <img
-                  src="img/partners/crcc.svg"
-                  alt="icon"
-                  class="partners__item"
-                />
-                <img
-                  src="img/partners/pnk-group.svg"
-                  alt="icon"
-                  class="partners__item"
-                />
-              </div>
-              <div class="img-row img-row-2">
-                <img src="img/partners/rsk.svg" alt="" class="partners__item" />
-                <img
-                  src="img/partners/tulachermet.svg"
-                  alt="icon"
-                  class="partners__item"
-                />
-                <img
-                  src="img/partners/lsr.svg"
-                  alt="icon"
-                  class="partners__item"
-                />
-              </div>
-              <div class="img-row img-row-3">
-                <img
-                  src="img/partners/transstroimehaniz.svg"
-                  alt="icon"
-                  class="partners__item"
-                />
-                <img
-                  src="img/partners/nerud.svg"
-                  alt="icon"
-                  class="partners__item"
-                />
-              </div>
-              <div class="img-row img-row-4">
-                <img src="img/partners/eks.svg" alt="" class="partners__item" />
-                <img
-                  src="img/partners/aipek.svg"
-                  alt="icon"
-                  class="partners__item"
-                />
-                <img src="img/partners/stroitransgaz.svg" alt="icon" class="partners__item" />
-              </div>
-              <div class="img-row img-row-5">
-                <img src="img/partners/tsk.svg" alt="" class="partners__item" />
-                <img
-                  src="img/partners/sber.svg"
-                  alt="icon"
-                  class="partners__item"
-                />
-              </div>
+      <div class="partners__wrapper">
+        <div class="partners__left">
+          <h2 class="partners__title">Нас рекомендуют</h2>
+          <div class="img-wrapper img-wrapper_mobile">
+            <div class="img-row img-row-1">
+              <img src="img/partners/rjd.svg" alt="icon" class="partners__item" />
+              <img src="img/partners/crcc.svg" alt="icon" class="partners__item"/>
+              <img src="img/partners/pnk-group.svg" alt="icon" class="partners__item"/>
             </div>
-            <div class="img-wrapper">
-              <div class="img-row img-row-1">
-                <img src="img/partners/rsk.svg" alt="" class="partners__item" />
-                <img
-                  src="img/partners/tulachermet.svg"
-                  alt="icon"
-                  class="partners__item"
-                />
-                <img
-                  src="img/partners/crcc.svg"
-                  alt=""
-                  class="partners__item"
-                />
-              </div>
-              <div class="img-row img-row-2">
-                <img src="img/partners/rjd.svg" alt="" class="partners__item" />
-                <img
-                  src="img/partners/pnk-group.svg"
-                  alt="icon"
-                  class="partners__item"
-                />
-                <img
-                  src="img/partners/sber.svg"
-                  alt="icon"
-                  class="partners__item"
-                />
-              </div>
-              <div class="img-row img-row-3">
-                <img
-                  src="img/partners/transstroimehaniz.svg"
-                  alt="icon"
-                  class="partners__item"
-                />
-                <img
-                  src="img/partners/nerud.svg"
-                  alt="icon"
-                  class="partners__item"
-                />
-                <img
-                  src="img/partners/stroitransgaz.svg"
-                  alt="icon"
-                  class="partners__item"
-                />
-              </div>
-              <div class="img-row img-row-4">
-                <img src="img/partners/eks.svg" alt="" class="partners__item" />
-                <img
-                  src="img/partners/aipek.svg"
-                  alt="icon"
-                  class="partners__item"
-                />
-                <img src="img/partners/tsk.svg" alt="icon" class="partners__item" />
-                <img src="img/partners/lsr.svg" alt="icon" class="partners__item" />
-              </div>
+            <div class="img-row img-row-2">
+              <img src="img/partners/rsk.svg" alt="icon" class="partners__item" />
+              <img src="img/partners/tulachermet.svg" alt="icon" class="partners__item"/>
+              <img src="img/partners/lsr.svg" alt="icon" class="partners__item"/>
+            </div>
+            <div class="img-row img-row-3">
+              <img src="img/partners/transstroimehaniz.svg"alt="icon" class="partners__item"/>
+              <img src="img/partners/nerud.svg" alt="icon" class="partners__item"/>
+            </div>
+            <div class="img-row img-row-4">
+              <img src="img/partners/eks.svg" alt="icon" class="partners__item" />
+              <img src="img/partners/aipek.svg" alt="icon" class="partners__item"/>
+              <img src="img/partners/stroitransgaz.svg" alt="icon" class="partners__item" />
+            </div>
+            <div class="img-row img-row-5">
+              <img src="img/partners/tsk.svg" alt="icon" class="partners__item" />
+              <img src="img/partners/sber.svg" alt="icon" class="partners__item"/>
             </div>
           </div>
-          <div class="partners__right right">
-            <h2 class="partners__title">Мы надежный партнер</h2>
-            <div class="right__img-wrapper">
-              <img src="img/partners/spark.svg" alt="icon" class="partners__item-right">
-              <img src="img/partners/risk.svg" alt="icon" class="partners__item-right">
-              <img src="img/partners/sbis.svg" alt="icon" class="partners__item-right">
-              <img src="img/partners/schedule.svg" alt="icon" class="partners__item-right">
-              <img src="img/partners/sber-rating.svg" alt="icon" class="partners__item-right">
-              <img src="img/partners/svetofor.svg" alt="icon" class="partners__item-right">
+          <div class="img-wrapper">
+            <div class="img-row img-row-1">
+              <img src="img/partners/rsk.svg" alt="icon" class="partners__item" />
+              <img src="img/partners/tulachermet.svg" alt="icon" class="partners__item"/>
+              <img src="img/partners/crcc.svg" alt="icon" class="partners__item"/>
+            </div>
+            <div class="img-row img-row-2">
+              <img src="img/partners/rjd.svg" alt="icon" class="partners__item" />
+              <img src="img/partners/pnk-group.svg" alt="icon" class="partners__item"/>
+              <img src="img/partners/sber.svg" alt="icon" class="partners__item"/>
+            </div>
+            <div class="img-row img-row-3">
+              <img src="img/partners/transstroimehaniz.svg" alt="icon" class="partners__item"/>
+              <img src="img/partners/nerud.svg" alt="icon" class="partners__item"/>
+              <img src="img/partners/stroitransgaz.svg" alt="icon" class="partners__item"/>
+            </div>
+            <div class="img-row img-row-4">
+              <img src="img/partners/eks.svg" alt="icon" class="partners__item" />
+              <img src="img/partners/aipek.svg" alt="icon" class="partners__item"/>
+              <img src="img/partners/tsk.svg" alt="icon" class="partners__item" />
+              <img src="img/partners/lsr.svg" alt="icon" class="partners__item" />
             </div>
           </div>
         </div>
+        <div class="partners__right right">
+          <h2 class="partners__title">Мы надежный партнер</h2>
+          <div class="right__img-wrapper">
+            <img src="img/partners/spark.svg" alt="icon" class="partners__item-right">
+            <img src="img/partners/risk.svg" alt="icon" class="partners__item-right">
+            <img src="img/partners/sbis.svg" alt="icon" class="partners__item-right">
+            <img src="img/partners/schedule.svg" alt="icon" class="partners__item-right">
+            <img src="img/partners/sber-rating.svg" alt="icon" class="partners__item-right">
+            <img src="img/partners/svetofor.svg" alt="icon" class="partners__item-right">
+          </div>
+        </div>
+      </div>
       </div>
     </section>
     <footer class="footer">
@@ -642,7 +610,7 @@
         <div class="footer__title">
           Контакты компании
         </div>
-        <div class="footer__inner">
+        <div id="contacts" class="footer__inner">
           <div class="footer__left">
             <div class="footer__contacts">
               <div class="footer__contacts-item_supply footer__contact">
@@ -726,8 +694,7 @@
          Copuright © 2021-2022  |  Advance Group
       </div>
     </footer>
-
     <script src="js/main.min.js"></script>
-    <script src="slick/slick.min.js"></script>
+    <!-- <script src="slick/slick.min.js"></script> -->
   </body>
 </html>

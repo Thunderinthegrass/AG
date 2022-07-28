@@ -24,13 +24,14 @@ section {
 }
 .footer {
   flex: 0 0 auto;
+  display: none;
 }
 
 .container {
-  max-width: 1920px;
+  max-width: 1440px;
   width: 100%;
   margin: 0 auto;
-  border: 1px solid #000000;
+  // border: 1px solid #000000;
   position: relative;
 }
 .view-rightsidemenu {
