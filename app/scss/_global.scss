@@ -3,7 +3,7 @@
 }
 html,
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 27px;
@@ -24,14 +24,12 @@ section {
 }
 .footer {
   flex: 0 0 auto;
-  display: none;
 }
 
 .container {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
-  // border: 1px solid #000000;
   position: relative;
 }
 .view-rightsidemenu {
@@ -45,22 +43,19 @@ section {
   cursor: pointer;
 }
 .d-none {
-  display: none!important;
+  display: none !important;
 }
-.d-block{
-  display: block!important;
-  opacity: 1!important;
+.d-block {
+  display: block !important;
+  opacity: 1 !important;
 }
 .page-count {
-  display: none;
+  font-family: "Roboto", sans-serif;
   position: absolute;
   top: 9px;
   right: 14px;
   font-weight: 500;
-  font-size: 26px;
-  line-height: 30px;
+  font-size: 74px;
+  line-height: 87px;
   color: #d18929;
-  @media (max-width: 500px){
-    display: block;
-  }
 }
