@@ -1,9 +1,6 @@
 .supplies {
   font-size: 25px;
   padding-top: 0;
-  .container {
-    // padding: 0;
-  }
   &__img {
     height: 650px;
     max-width: 360px;
@@ -147,6 +144,7 @@
       padding-top: 80px;
     }
     &__left {
+      position: relative;
       max-width: 700px;
       width: 100%;
       margin-right: 40px;
@@ -213,6 +211,6 @@
   }
   .page-count{
     top: 18px;
-    left: -40px;
+    right: -84px;
   }
 }
