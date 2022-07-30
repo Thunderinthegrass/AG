@@ -14,6 +14,7 @@
     }
   }
   @media (max-width: 1540px) {
+    padding-right: 0;
     .center-block {
       max-width: 633px;
       width: 100%;
@@ -25,6 +26,8 @@
       right: 30px;
     }
     .center-block__text {
+      width: 350px;
+      font-size: 30px;
       left: auto;
       right: 0;
     }
@@ -33,6 +36,20 @@
     }
     &__text {
       margin-bottom: 30px;
+    }
+  }
+  @media (max-width: 1260px) {
+    padding-top: 36px;
+    padding-right: 10px;
+    padding-left: 10px;
+    .container {
+      border: 1px solid #000000;
+    }
+    &__left {
+      padding-left: 10px;
+    }
+    .benefits {
+      margin-bottom: 0;
     }
   }
   @media (max-width: 1160px) {
@@ -51,6 +68,10 @@
     }
     .center-block__count {
       display: none;
+    }
+    .page-count{
+      display: block;
+      z-index: 1;
     }
     .center-block__text {
       font-weight: 500;
@@ -84,9 +105,19 @@
       line-height: 131.69%;
       letter-spacing: 0.02em;
     }
+    .benefits {
+      margin-right: 0;
+      margin-bottom: 32px;
+      &__item {
+        margin-right: 0;
+      }
+    }
   }
   @media (max-width: 990px) {
     padding-top: 0;
+    .container {
+      padding-right: 0;
+    }
     .center-block {
       background: none;
       width: 360px;
@@ -150,7 +181,7 @@
       font-size: 16px;
       line-height: 19px;
     }
-    &__left{
+    &__left {
       padding-left: 0;
     }
     .benefits {
@@ -158,6 +189,9 @@
     }
   }
   @media (max-width: 690px) {
+    .benefits {
+      justify-content: space-around;
+    }
     .benefits__text {
       width: 180px;
       margin-right: 0;
@@ -175,6 +209,15 @@
     padding: 30px 10px 0;
   }
   @media (max-width: 445px) {
+    &__inner {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .benefits {
+      &__item {
+        margin-right: 20px;
+      }
+    }
     .center-block__text {
       width: 280px;
       top: 25px;
@@ -214,18 +257,24 @@
       line-height: 23px;
       letter-spacing: 0.02em;
     }
-    .service__btn{
+    .service__btn {
       margin-bottom: 44px;
-      &::before{
+      &::before {
         top: -15px;
       }
-      &::after{
+      &::after {
         top: -15px;
       }
     }
-    .page-count{
+    .page-count {
+      display: block;
       top: 16px;
       right: 39px;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 30px;
     }
   }
 }

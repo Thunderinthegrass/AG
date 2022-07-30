@@ -167,10 +167,8 @@
         top: -13px;
       }
       &-wrapper {
+        display: block;
         position: absolute;
-        text-align: center;
-        width: 100%;
-        bottom: 0;
       }
     }
   }
