@@ -212,6 +212,40 @@
       }
     }
   }
+  @media (max-width: 730px) {
+    .basic__btn {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 21px;
+      letter-spacing: -0.01em;
+      width: 280px;
+      bottom: 30px;
+      margin-left: -6px;
+      &::before {
+        width: 6px;
+        height: 50px;
+        top: 0;
+        left: 0;
+      }
+      &::after {
+        width: 6px;
+        height: 50px;
+        top: 0;
+        right: 0;
+      }
+    }
+    .list {
+      margin-bottom: 50px;
+      .list__right {
+        li:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
   @media (max-width: 670px) {
     &__title {
       font-weight: 600;

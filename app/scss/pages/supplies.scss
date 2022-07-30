@@ -13,9 +13,9 @@
   &__right {
     padding-left: 47px;
     .basic__btn {
-      display: none;
       position: relative;
-      left: 22%;
+      left: 50%;
+      transform: translateX(-50%);
       margin-top: 20px;
       margin-left: 0;
       font-weight: 600;
