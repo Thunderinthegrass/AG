@@ -45,8 +45,14 @@
     }
   }
   @media (max-width: 1525px) {
+    .cases__wrapper{
+      padding-right: 10px;
+    }
     &__slider-item:nth-child(1) {
       position: relative;
+      .cases__wrapper{
+        margin-bottom: 30px;
+      }
       .cases__title-wrapper {
         flex-direction: column;
       }
@@ -116,6 +122,9 @@
     }
     &__slider-item:nth-child(2) {
       position: relative;
+      .cases__wrapper{
+        padding-left: 22px;
+      }
       .cases__title-wrapper {
         flex-direction: column;
       }
@@ -142,13 +151,15 @@
       .cases__text {
         max-width: 100%;
         width: 100%;
+        margin-top: 0;
       }
       .cases__item {
         &:nth-child(1) {
           position: relative;
           max-width: 700px;
           top: 0px;
-          right: 0px;
+          right: auto;
+          left: 0;
           img {
             transform: translateY(-65%) translateX(0%);
           }
@@ -158,6 +169,7 @@
           max-width: 700px;
           top: 0px;
           right: 0px;
+          margin-right: 0;
           img {
             transform: translateY(-65%) translateX(0%);
           }
@@ -321,6 +333,11 @@
     .container {
       border: 1px solid #000000;
     }
+    &__slider-item:nth-child(2){
+      .container{
+        border: none;
+      }
+    }
     &__title {
       font-weight: 600;
       font-size: 20px;
@@ -330,6 +347,7 @@
     }
     &__title-wrapper {
       margin-bottom: 0;
+      padding-top: 35px;
     }
     &__text {
       font-weight: 700;
@@ -337,8 +355,13 @@
       line-height: 21px;
       letter-spacing: 0.03em;
       text-transform: lowercase;
-      // margin-bottom: 20px;
       width: auto;
+    }
+    .cases__slider-item:nth-child(2) .cases__text{
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 21px;
+      letter-spacing: 0.03em;
     }
     &__wrapper {
       justify-content: center;
@@ -359,6 +382,9 @@
       letter-spacing: 0.01em;
     }
     .cases__slider-item:nth-child(1) .page-count {
+      top: -12px;
+    }
+    .cases__slider-item:nth-child(2) .page-count {
       top: -12px;
     }
   }
@@ -401,7 +427,11 @@
     padding: 35px 10px 0;
   }
   @media (max-width: 450px) {
-    .cases__slider-item:nth-child(1) .page-count {
+    .cases__item{
+      margin-bottom: 0;
+    }
+    .cases__slider-item:nth-child(1) .page-count,
+    .cases__slider-item:nth-child(2) .page-count {
       top: 16px;
       right: 39px;
       font-family: "Roboto";
@@ -409,6 +439,11 @@
       font-weight: 500;
       font-size: 26px;
       line-height: 30px;
+      top: 5px;
+      right: 7px;
     }
+  }
+  @media (max-width: 450px){
+
   }
 }
