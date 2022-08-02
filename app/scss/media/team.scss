@@ -13,7 +13,6 @@
     &__bottom-img {
       max-width: 1163px;
       width: 100%;
-      height: 380px;
     }
     &__members {
       margin-right: 5px;
@@ -21,7 +20,7 @@
   }
   @media (max-width: 1620px) {
     &__members-wrapper {
-      padding-left: 60px;
+      // padding-left: 60px;
     }
   }
   @media (max-width: 1570px) {
@@ -36,14 +35,78 @@
       margin-right: 40px;
     }
     &__bottom-img {
-      height: 350px;
-      display: none;
+      height: 200px;
     }
     &__members-wrapper {
       margin-bottom: 40px;
       padding-left: 0;
+    }
+  }
+  @media (max-width: 1380px) {
+    &__left {
       display: flex;
       justify-content: center;
+      margin-right: 0;
+    }
+    &__members-wrapper {
+      max-width: 500px;
+    }
+    &__members-inner {
+      max-width: 500px;
+      justify-content: space-between;
+      padding-left: 0;
+    }
+    &__members {
+      &:nth-child(1) {
+        margin-right: 60px;
+      }
+      &:nth-child(2) {
+        margin-right: 60px;
+      }
+      &:nth-child(3) {
+        margin-right: 60px;
+      }
+      &:nth-child(4) {
+        margin-right: 60px;
+      }
+      &:nth-child(5) {
+        margin-right: 60px;
+      }
+    }
+    &__bottom-img {
+      display: none;
+    }
+  }
+  @media (max-width: 1525px) {
+    .page-count {
+      left: auto;
+      top: -100px;
+      right: 0;
+    }
+  }
+  @media (max-width: 1260px) {
+    padding-top: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+    .container {
+      border: 1px solid #000000;
+      padding-top: 90px;
+    }
+    .team__title {
+      margin-top: 0;
+    }
+    &__right-content_left {
+      padding-right: 10px;
+    }
+    &__members-inner {
+      padding-top: 30px;
+    }
+    &-logo_mobile {
+      position: absolute;
+      height: 100px;
+      width: 96px;
+      right: 30px;
+      top: -15px;
     }
   }
   @media (max-width: 1250px) {
@@ -60,6 +123,63 @@
       &::after {
         left: 0;
       }
+    }
+    .team-logo {
+      display: none;
+      &_mobile {
+        display: block;
+      }
+    }
+    .name {
+      display: none;
+      &_mobile {
+        display: block;
+      }
+    }
+    .position {
+      display: none;
+      &_mobile {
+        display: block;
+      }
+    }
+    &__right-content_left {
+      display: none;
+    }
+    &__right-content_right {
+      padding: 0;
+      margin: 0;
+      border: none;
+    }
+    &__right-content {
+      flex-direction: row;
+      justify-content: center;
+    }
+    .name_mobile {
+      display: block;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      padding-left: 13px;
+      margin-bottom: 3px;
+      span {
+        display: block;
+      }
+    }
+    .position_mobile {
+      display: block;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      padding-left: 13px;
+      color: #d18929;
+      margin-bottom: 16px;
+      span {
+        display: block;
+      }
+    }
+    .page-count {
+      top: -230px;
+      right: 10px;
     }
   }
   @media (max-width: 1211px) {
@@ -89,19 +209,46 @@
         margin-bottom: 0;
       }
     }
-    .container {
-      padding-top: 120px;
+    .page-count {
+      display: none;
+    }
+    .page-count_mobile {
+      display: block;
+      position: absolute;
+      right: 15px;
+      top: 0;
+      font-weight: 500;
+      font-size: 76px;
+      line-height: 89px;
+      color: #d18929;
+    }
+  }
+  @media (max-width: 991px) {
+    &__members-inner {
+      justify-content: space-around;
+    }
+    &__members {
+      &:nth-child(1) {
+        margin-right: 0;
+      }
+      &:nth-child(2) {
+        margin-right: 0;
+      }
+      &:nth-child(3) {
+        margin-right: 0;
+      }
+      &:nth-child(4) {
+        margin-right: 0;
+      }
+      &:nth-child(5) {
+        margin-right: 0;
+      }
     }
   }
   @media (max-width: 900px) {
     .container {
       display: flex;
       flex-direction: column-reverse;
-      align-items: center;
-    }
-    &__members-wrapper {
-      display: flex;
-      justify-content: center;
       align-items: center;
     }
     &__members-inner {
@@ -125,24 +272,17 @@
       width: 100%;
     }
   }
+  @media (max-width: 600px){
+    .title-wrapper{
+      left: 23px;
+    }
+    &__right-img{
+      background-position: right;
+    }
+  }
   @media (max-width: 500px) {
     margin-top: 30px;
     padding: 0 10px 30px;
-    .page-count{
-      display: block;
-      right: auto;
-      top: 7px;
-      left: 20px;
-    }
-    .team-logo {
-      background-image: url(../img/team/mobile/logo.svg);
-      display: block;
-      height: 96px;
-      width: 100px;
-      position: absolute;
-      top: 66px;
-      right: 20px;
-    }
     .container {
       padding-top: 81px;
     }
@@ -158,8 +298,30 @@
         display: none;
       }
     }
+    &__left{
+      padding-left: 0;
+    }
     &__members {
-      margin-bottom: 36px;
+      &:nth-child(1){
+        margin-top: 0;
+        margin-bottom: 36px;
+      }
+      &:nth-child(2){
+        margin-top: 0;
+        margin-bottom: 36px;
+      }
+      &:nth-child(3){
+        margin-top: 0;
+        margin-bottom: 36px;
+      }
+      &:nth-child(4){
+        margin-top: 0;
+        margin-bottom: 36px;
+      }
+      &:nth-child(5){
+        margin-top: 0;
+        margin-bottom: 40px;
+      }
     }
     &__members-inner {
       max-width: 180px;
@@ -168,33 +330,6 @@
     }
     &__bottom-img_mobile {
       display: block;
-    }
-    .name,
-    .position {
-      display: none;
-    }
-    .name_mobile {
-      display: block;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 19px;
-      padding-left: 13px;
-      margin-bottom: 3px;
-      span {
-        display: block;
-      }
-    }
-    .position_mobile {
-      display: block;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 19px;
-      padding-left: 13px;
-      color: #d18929;
-      margin-bottom: 16px;
-      span {
-        display: block;
-      }
     }
     &__right {
       padding-left: 10px;
@@ -205,12 +340,17 @@
         font-size: 20px;
         line-height: 110%;
         text-align: center;
+        margin-top: 0;
         &::before {
+          width: 28px;
+          height: 22px;
           top: -7px;
-          left: 20px;
+          left: 10px;
         }
         &::after {
-          right: 30px;
+          width: 28px;
+          height: 22px;
+          right: 10px;
           bottom: -2px;
         }
       }
@@ -229,6 +369,28 @@
           top: 77px;
         }
       }
+    }
+  }
+  @media (max-width: 450px) {
+    .page-count_mobile{
+      top: 16px;
+      right: 39px;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 30px;
+      top: 5px;
+      right: 7px;
+    }
+    &__right-img{
+      height: 273px;
+    }
+  }
+  @media (max-width: 350px) {
+    &__bottom-img_mobile {
+      display: block;
+      max-width: 100%;
     }
   }
 }
