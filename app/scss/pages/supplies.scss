@@ -1,26 +1,31 @@
 .supplies {
   font-size: 25px;
   padding-top: 0;
+  .container{
+    padding-bottom: 57px;
+  }
   &__img {
-    height: 650px;
-    max-width: 360px;
+    height: 635px;
+    max-width: 351px;
     width: 100%;
     background-image: url(../img/supplies-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    margin-top: 35px;
   }
   &__right {
-    padding-left: 47px;
+    padding-left: 15px;
     .basic__btn {
       position: relative;
       left: 50%;
       transform: translateX(-50%);
-      margin-top: 20px;
+      margin-top: -20px;
       margin-left: 0;
       font-weight: 600;
-      font-size: 36px;
-      line-height: 44px;
+      font-size: 31.168px;
+      line-height: 37px;
+      text-align: center;
       letter-spacing: -0.01em;
       text-align: center;
       color: #d18929;
@@ -30,10 +35,10 @@
       &::before {
         position: absolute;
         content: "";
-        width: 16px;
-        height: 100px;
+        width: 20px;
+        height: 87px;
         left: -20px;
-        top: -10px;
+        top: -7px;
         background-image: url(../../img/btn-left.svg);
         background-size: contain;
         background-position: center;
@@ -42,24 +47,23 @@
       &::after {
         position: absolute;
         content: "";
-        width: 15px;
-        height: 100px;
+        width: 20px;
+        height: 87px;
         background-image: url(../../img/btn-right.svg);
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
-        right: -20px;
-        top: -10px;
+        right: -15px;
+        top: -7px;
       }
     }
   }
   &__title {
     position: relative;
-    width: 540px;
-    font-weight: 500;
     font-size: 42px;
-    line-height: 51px;
+    line-height: 57px;
     letter-spacing: 0.02em;
+    margin-bottom: 33px;
     &::after {
       position: absolute;
       content: "";
@@ -74,13 +78,13 @@
     padding-left: 26px;
     margin-bottom: 38px;
     &-title {
-      font-weight: 500;
-      font-size: 40px;
-      line-height: 49px;
+      font-weight: 600;
+      font-size: 34.383px;
+      line-height: 41px;
       letter-spacing: 0.02em;
       text-transform: uppercase;
-      margin-bottom: 16px;
-      padding-left: 81px;
+      margin-bottom: 22px;
+      padding-left: 68px;
       padding-top: 23px;
       &_mobile {
         display: none;
@@ -132,22 +136,24 @@
       margin-right: 115px;
     }
     li {
-      margin-bottom: 10px;
+      margin-bottom: 11px;
     }
   }
   .products {
     display: flex;
+    justify-content: space-between;
     &__wrapper {
       display: flex;
+      justify-content: space-between;
     }
     &__inner {
       padding-top: 80px;
     }
     &__left {
       position: relative;
-      max-width: 700px;
+      max-width: 760px;
       width: 100%;
-      margin-right: 40px;
+      padding-top: 54px;
       &-list {
         font-weight: 500;
         font-size: 36px;
@@ -159,6 +165,7 @@
       position: relative;
       display: flex;
       flex-direction: column;
+      padding-top: 145px;
       &_mobile {
         display: none;
       }
@@ -167,12 +174,12 @@
       margin-right: 94px;
     }
     &__item {
-      margin-bottom: 43px;
+      margin-bottom: 46px;
     }
     &__link {
       position: relative;
-      padding-left: 27px;
-      font-weight: 500;
+      padding-left: 52px;
+      font-weight: 600;
       font-size: 36px;
       letter-spacing: 0.01em;
       text-transform: uppercase;
@@ -180,22 +187,23 @@
       &::before {
         position: absolute;
         content: "";
-        width: 6px;
-        height: 6px;
+        width: 15px;
+        height: 15px;
         background: #000000;
         border-radius: 50%;
-        left: 0;
+        left: 16px;
         top: 50%;
         transform: translateY(-50%);
       }
     }
     &__title {
       position: relative;
-      font-weight: 500;
-      font-size: 34px;
-      line-height: 41px;
-      letter-spacing: 0.01em;
-      margin-bottom: 102px;
+      font-weight: 600;
+      font-size: 38.8737px;
+      line-height: 51px;
+      letter-spacing: 0.025em;
+      margin-left: 6px;
+      margin-bottom: 86px;
       text-transform: uppercase;
       width: 341px;
       &::after {
@@ -209,8 +217,8 @@
       }
     }
   }
-  .page-count{
-    top: 18px;
-    right: -84px;
+  .page-count {
+    top: 29px;
+    right: -112px;
   }
 }
