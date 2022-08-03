@@ -1,6 +1,9 @@
 .header {
   @media (max-width: 1260px) {
     padding: 10px 10px 0;
+    .header__nav {
+      display: none;
+    }
   }
   .container {
     @media (max-width: 1260px) {
@@ -11,9 +14,6 @@
       }
       &::after {
         top: 800px;
-      }
-      .header__nav {
-        display: none;
       }
     }
     @media (max-width: 536px) {
@@ -32,6 +32,7 @@
   &__logo {
     @media (max-width: 1260px) {
       top: 0;
+      right: 0;
     }
     img {
       @media (max-width: 1777px) {
