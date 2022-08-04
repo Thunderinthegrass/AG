@@ -1,4 +1,9 @@
 .delivery {
+  @media (max-width: 1425px){
+    &__img-right{
+      display: none;
+    }
+  }
   @media (max-width: 1245px) {
     padding-right: 10px;
     .page-count {
@@ -92,6 +97,7 @@
   @media (max-width: 1260px) {
     padding-bottom: 0;
     padding-left: 10px;
+    padding-right: 10px;
     .container {
       border: 1px solid #000000;
       padding-bottom: 40px;
@@ -108,7 +114,7 @@
       top: 0;
     }
     .advantages__btn-wrapper {
-      bottom: -10px;
+      bottom: 10px;
     }
     &__left{
       padding-right: 10px;

@@ -43,7 +43,7 @@
         top: 60px;
         right: 70px;
         margin-right: 0;
-        .img-wrapper{
+        .img-wrapper {
           left: auto;
           right: -6px;
           top: -33px;
@@ -63,7 +63,7 @@
       &:nth-child(3) {
         max-width: 380px;
         margin-right: 133px;
-        .img-wrapper{
+        .img-wrapper {
           left: auto;
           right: -15px;
           top: -20px;
@@ -76,7 +76,7 @@
       &:nth-child(4) {
         margin-right: 0;
         max-width: 690px;
-        .img-wrapper{
+        .img-wrapper {
           left: auto;
           right: 25px;
           top: -24px;
@@ -105,8 +105,8 @@
       height: 5px;
       background: #d18929;
       left: auto;
-      right: 70px;
-      top: 58%;
+      right: 0;
+      top: 48%;
     }
     &::after {
       position: absolute;
@@ -115,28 +115,31 @@
       height: 5px;
       background: #d18929;
       left: auto;
-      right: 70px;
-      top: 56%;
+      right: 0;
+      top: 50%;
     }
     .cases__title {
-      margin-right: 73px;
+      margin-right: 118px;
     }
     .cases__item {
       &:nth-child(1) {
         position: absolute;
         max-width: 525px;
         top: 130px;
-        left: 180px;
+        left: 127px;
         img {
-          transform: translateY(-35%);
+          transform: translateY(-85%);
+          width: 577px;
         }
       }
       &:nth-child(2) {
         margin-right: 108px;
         max-width: 471px;
         width: 100%;
+        margin-right: 138px;
         img {
-          transform: translateY(-35%);
+          transform: translateY(-90%);
+          width: 476px;
         }
       }
       &:nth-child(3) {
@@ -144,31 +147,32 @@
         max-width: 583px;
         width: 100%;
         img {
-          transform: translateY(-55%);
+          transform: translateY(-80%);
+          width: 230px;
         }
       }
     }
     .cases__wrapper {
       display: flex;
       flex-direction: row;
-      padding-left: 178px;
+      padding-left: 120px;
+      margin-bottom: 130px;
     }
     .cases__text {
-      max-width: 600px;
+      max-width: 670px;
       width: 100%;
-      margin-top: 200px;
-      font-weight: 500;
+      margin-top: 233px;
+      font-weight: 600;
       font-size: 40px;
-      line-height: 49px;
+      line-height: 53px;
       letter-spacing: 0.03em;
     }
     .page-count {
-      font-family: "Montserrat";
-      font-weight: 500;
-      font-size: 74px;
-      line-height: 90px;
-      left: 58%;
-      top: 135px;
+      font-weight: 300;
+      font-size: 94.5979px;
+      line-height: 114px;
+      left: 56.5%;
+      top: 20px;
     }
   }
   &__title {
@@ -185,6 +189,7 @@
       padding-top: 26px;
       padding-left: 32px;
       display: flex;
+      margin-bottom: 80px;
     }
   }
   &__text {
@@ -212,7 +217,6 @@
   }
   .case-number {
     position: absolute;
-    font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
@@ -296,8 +300,7 @@
     text-align: center;
     text-decoration-line: underline;
     color: #d18929;
-    margin-bottom: 24px;
-    padding-top: 45px;
+    padding-top: 0;
     cursor: pointer;
   }
 }
