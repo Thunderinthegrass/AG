@@ -1,6 +1,6 @@
 .delivery {
   padding-top: 0;
-  padding-bottom: 100px;
+  padding-bottom: 60px;
   position: relative;
   .container {
     display: flex;
@@ -54,7 +54,7 @@
       }
     }
     &__img {
-      background-image: url(../img/delivery.jpg);
+      background-image: url(../img/delivery/delivery.jpg);
       width: 398px;
       height: 265px;
       margin-left: 100px;
@@ -167,7 +167,7 @@
         display: block;
         position: absolute;
         left: 50%;
-        bottom: 150px;
+        bottom: 80px;
         transform: translateX(-50%);
       }
     }
@@ -178,7 +178,7 @@
     top: 140px;
     width: 176px;
     height: 727px;
-    background-image: url(../img/delivery-img-right.jpg);
+    background-image: url(../img/delivery/delivery-img-right.jpg);
   }
   .page-count {
     position: absolute;

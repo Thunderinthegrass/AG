@@ -1,4 +1,5 @@
 .service {
+  padding-bottom: 60px;
   @media (max-width: 1785px) {
     &__btn {
       margin-bottom: 30px;
@@ -13,8 +14,8 @@
       margin-bottom: 30px;
     }
   }
-  @media (max-width: 1540px) {
-    padding-right: 0;
+  @media (max-width: 1365px) {
+    
     .center-block {
       max-width: 633px;
       width: 100%;
@@ -69,7 +70,7 @@
     .center-block__count {
       display: none;
     }
-    .page-count{
+    .page-count {
       display: block;
       z-index: 1;
     }
@@ -97,6 +98,15 @@
       }
     }
   }
+  @media (max-width: 1090px) {
+    .page-count {
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 30px;
+      top: 23px;
+      right: 14px;
+    }
+  }
   @media (max-width: 1025px) {
     .center-block__text {
       width: 350px;
@@ -104,6 +114,7 @@
       font-size: 30px;
       line-height: 131.69%;
       letter-spacing: 0.02em;
+      display: none;
     }
     .benefits {
       margin-right: 0;
@@ -129,6 +140,7 @@
     .center-block__text {
       top: 55px;
       left: 20px;
+      display: block;
     }
     &__inner {
       flex-direction: column;
@@ -269,12 +281,9 @@
     .page-count {
       display: block;
       top: 16px;
-      right: 39px;
-      font-family: "Roboto";
+      right: 15px;
       font-style: normal;
       font-weight: 500;
-      font-size: 26px;
-      line-height: 30px;
     }
   }
 }
