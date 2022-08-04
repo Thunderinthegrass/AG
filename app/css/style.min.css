@@ -2205,6 +2205,7 @@ section {
 
 .cases {
   padding-top: 0;
+  padding-bottom: 60px;
 }
 .cases .container {
   border: none;
@@ -2864,6 +2865,7 @@ section {
   .cases {
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 30px;
   }
   .cases__slider-item:nth-child(2) .container {
     border: none;
@@ -3008,7 +3010,6 @@ section {
 }
 .team {
   position: relative;
-  padding-top: 88px;
 }
 .team-logo_mobile {
   display: none;
@@ -3034,23 +3035,22 @@ section {
   display: flex;
 }
 .team__left {
-  margin-right: 85px;
+  margin-right: 51px;
   max-width: 701px;
   width: 100%;
 }
 .team .title-wrapper {
   position: absolute;
   top: 36px;
-  left: 90px;
+  left: 0;
 }
 .team__title {
   position: relative;
   width: 745px;
-  margin-top: 40px;
-  margin-left: 17px;
-  font-weight: 500;
+  margin-left: 39px;
+  font-weight: 600;
   font-size: 42px;
-  line-height: 51px;
+  line-height: 50px;
   letter-spacing: 0.02em;
 }
 .team__members {
@@ -3059,10 +3059,14 @@ section {
   margin-top: 40px;
 }
 .team__members:nth-child(1), .team__members:nth-child(2) {
-  margin-right: 60px;
+  margin-right: 70px;
 }
 .team__members:nth-child(4) {
   margin-right: 84px;
+  margin-top: 10px;
+}
+.team__members:nth-child(5) {
+  margin-top: 10px;
 }
 .team__members::after {
   position: absolute;
@@ -3076,8 +3080,8 @@ section {
 .team__members-inner {
   max-width: 701px;
   width: 100%;
-  padding-left: 96px;
-  padding-top: 153px;
+  padding-left: 10px;
+  padding-top: 128px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3091,7 +3095,7 @@ section {
 .team__members-img {
   width: 160px;
   height: 180px;
-  margin-bottom: 7px;
+  margin-bottom: 2px;
 }
 .team__members-name {
   margin-bottom: 6px;
@@ -3113,11 +3117,10 @@ section {
   position: relative;
   max-width: 748px;
   width: 100%;
-  height: 246px;
+  height: 269px;
   background-image: url(/img/team/bottom-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: 30px;
 }
 .team__bottom-img_mobile {
   background-image: url(../img/team/mobile/bottom.jpg);
@@ -3148,13 +3151,13 @@ section {
   max-width: 600px;
   width: 100%;
   height: 100%;
-  padding-top: 42px;
+  padding-top: 20px;
 }
 .team__right-img {
-  max-width: 600px;
+  max-width: 571px;
   width: 100%;
-  height: 586px;
-  margin-bottom: 35px;
+  height: 562px;
+  margin-bottom: 25px;
   position: relative;
   background-image: url(/img/team/director.jpg);
   background-repeat: no-repeat;
@@ -3164,8 +3167,8 @@ section {
 .team__right-img::before {
   content: "";
   position: absolute;
-  top: 166px;
-  left: -33px;
+  top: 169px;
+  left: -50px;
   width: 200px;
   height: 5px;
   background: #d18929;
@@ -3174,18 +3177,17 @@ section {
 .team__right-img::after {
   content: "";
   position: absolute;
-  left: -33px;
-  top: 188px;
+  left: -50px;
+  top: 191px;
   width: 200px;
   height: 5px;
   background: #d18929;
   z-index: 1;
 }
 .team__right-img .page-count {
-  font-family: "Montserrat";
-  font-weight: 500;
-  font-size: 74px;
-  line-height: 90px;
+  font-weight: 300;
+  font-size: 87.6923px;
+  line-height: 105px;
   right: auto;
   top: 0;
   left: 25px;
@@ -3201,10 +3203,11 @@ section {
 }
 .team__right-content_right {
   border-right: 1px solid #d18929;
-  max-width: 347px;
+  max-width: 320px;
   width: 100%;
-  margin-left: 41px;
-  padding-right: 35px;
+  margin-left: -10px;
+  margin-top: 12px;
+  padding-right: 5px;
 }
 .team__right-content_left {
   -webkit-box-flex: 1;
@@ -3215,7 +3218,7 @@ section {
   position: relative;
 }
 .team__right .name {
-  display: inline-block;
+  display: block;
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
@@ -3223,13 +3226,13 @@ section {
   margin-bottom: 10px;
   margin-right: 20px;
   padding-left: 17px;
-  text-align: left;
+  text-align: right;
 }
 .team__right .name_mobile {
   display: none;
 }
 .team__right .position {
-  display: inline-block;
+  display: block;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -3243,11 +3246,12 @@ section {
 }
 .team__right .text {
   position: relative;
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 110%;
+  font-weight: 300;
+  font-size: 24.1987px;
+  line-height: 134%;
   text-align: center;
-  margin-top: 27px;
+  margin-top: 17px;
+  padding-right: 40px;
 }
 .team__right .text::before {
   position: absolute;
