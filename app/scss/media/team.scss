@@ -37,6 +37,12 @@
       padding-left: 0;
     }
   }
+  @media (max-width: 1425px){
+    padding-bottom: 30px;
+    .team-logo{
+      left: 50%;
+    }
+  }
   @media (max-width: 1380px) {
     &__left {
       display: flex;
@@ -63,20 +69,15 @@
       }
       &:nth-child(4) {
         margin-right: 60px;
+        margin-top: 40px;
       }
       &:nth-child(5) {
         margin-right: 60px;
+        margin-top: 40px;
       }
     }
     &__bottom-img {
       display: none;
-    }
-  }
-  @media (max-width: 1525px) {
-    .page-count {
-      left: auto;
-      top: -100px;
-      right: 0;
     }
   }
   @media (max-width: 1260px) {
@@ -172,10 +173,6 @@
         display: block;
       }
     }
-    .page-count {
-      top: -230px;
-      right: 10px;
-    }
   }
   @media (max-width: 1211px) {
     &__title {
@@ -207,13 +204,14 @@
     .page-count {
       display: none;
     }
+  }
+  @media (max-width: 1290px) {
     .page-count_mobile {
       display: block;
       position: absolute;
       right: 15px;
       top: 0;
       font-weight: 500;
-      font-size: 76px;
       line-height: 89px;
       color: #d18929;
     }
