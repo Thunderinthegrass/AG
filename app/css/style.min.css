@@ -1271,6 +1271,9 @@ section {
     text-transform: uppercase;
     padding-left: 15px;
   }
+  .supplies .products__link::before {
+    left: 2px;
+  }
   .supplies .list {
     font-size: 16px;
     line-height: 19px;
@@ -1323,7 +1326,7 @@ section {
 
 .delivery {
   padding-top: 0;
-  padding-bottom: 60px;
+  padding-bottom: 56px;
   position: relative;
 }
 .delivery .container {
@@ -1388,6 +1391,9 @@ section {
   width: 100%;
   height: 265px;
   margin-left: 100px;
+}
+.delivery .descr__img-wrapper::after {
+  display: none;
 }
 .delivery .advantages {
   position: relative;
@@ -1569,27 +1575,6 @@ section {
     margin-left: 20px;
     margin-top: 0;
   }
-  .delivery .advantages__btn {
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-    letter-spacing: -0.01em;
-    width: 280px;
-  }
-  .delivery .advantages__btn::before {
-    width: 6px;
-    height: 49px;
-    top: 0;
-  }
-  .delivery .advantages__btn::after {
-    width: 6px;
-    height: 49px;
-    top: 0;
-  }
-  .delivery .advantages__btn-wrapper {
-    width: 280px;
-    bottom: 30px;
-  }
   .delivery .descr {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1651,37 +1636,66 @@ section {
     top: 0;
   }
   .delivery .advantages__btn-wrapper {
-    bottom: 10px;
+    bottom: 36px;
   }
   .delivery__left {
     padding-right: 10px;
   }
 }
+@media (max-width: 744px) {
+  .delivery .advantages {
+    margin-bottom: 87px;
+  }
+  .delivery .advantages__item:last-child {
+    margin-bottom: 20px;
+  }
+}
 @media (max-width: 700px) {
+  .delivery .advantages {
+    margin-bottom: 0;
+  }
   .delivery .advantages .delivery__img-right {
     display: none;
   }
   .delivery .advantages__item {
     padding-right: 10px;
   }
-}
-@media (max-width: 700px) {
+  .delivery .advantages__btn {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: -0.01em;
+    width: 280px;
+  }
+  .delivery .advantages__btn::before {
+    width: 6px;
+    height: 49px;
+    top: 0;
+  }
+  .delivery .advantages__btn::after {
+    width: 6px;
+    height: 49px;
+    top: 0;
+  }
+  .delivery .advantages__btn-wrapper {
+    width: 280px;
+    bottom: 0;
+  }
   .delivery__title {
     font-size: 30px;
     line-height: 35px;
     letter-spacing: -0.02em;
   }
-  .delivery .advantages {
-    margin-bottom: 0;
+  .delivery .descr {
+    margin-bottom: 58px;
   }
 }
 @media (max-width: 500px) {
   .delivery {
     padding: 30px 10px 0;
   }
-  .delivery__title {
-    padding-right: 77px;
-    margin-left: 3px;
+  .delivery__left {
+    padding-top: 23px;
   }
   .delivery .descr {
     position: relative;
@@ -1708,7 +1722,10 @@ section {
   .delivery .descr__text {
     font-size: 18px;
     line-height: 21px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
+  }
+  .delivery .descr__text p {
+    margin-bottom: 20px;
   }
   .delivery .advantages__list {
     padding-left: 40px;
@@ -1717,10 +1734,10 @@ section {
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 0.02em;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
   .delivery .advantages__item:last-child {
-    margin-bottom: 70px;
+    margin-bottom: 60px;
   }
   .delivery .advantages__item::before {
     left: -45px;
@@ -1733,14 +1750,28 @@ section {
     width: 260px;
   }
   .delivery__title {
+    padding-right: 77px;
+    margin-left: 3px;
     font-size: 20px;
     line-height: 23px;
     letter-spacing: 0.02em;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
   .delivery__title::after {
     display: none;
   }
+}
+.delivery .descr__img-wrapper {
+  position: relative;
+}
+.delivery .descr__img-wrapper::after {
+  position: absolute;
+  content: "";
+  width: 220px;
+  height: 4px;
+  background: #d18929;
+  bottom: -45px;
+  right: -10px;
 }
 
 .service {
@@ -1755,7 +1786,6 @@ section {
 .service__title {
   position: relative;
   width: 745px;
-  font-weight: 600;
   font-size: 42px;
   line-height: 50px;
   letter-spacing: 0.02em;
@@ -1770,7 +1800,6 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-weight: 300;
   font-size: 20px;
   line-height: 27px;
   letter-spacing: 0.085em;
@@ -1803,7 +1832,6 @@ section {
   width: 33.3%;
   margin-bottom: 55px;
   padding-right: 20px;
-  font-weight: 300;
   font-size: 18px;
   line-height: 22px;
   text-transform: lowercase;
@@ -1819,7 +1847,6 @@ section {
 }
 .service__btn {
   position: relative;
-  font-weight: 600;
   font-size: 24.4143px;
   line-height: 31px;
   text-align: center;
@@ -1873,7 +1900,6 @@ section {
   position: absolute;
   left: -80px;
   top: 16px;
-  font-weight: 300;
   font-size: 91.5263px;
   line-height: 110px;
   color: #d18929;
@@ -1943,9 +1969,9 @@ section {
 }
 @media (max-width: 1260px) {
   .service {
-    padding-top: 36px;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-top: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
     padding-bottom: 30px;
   }
   .service .container {
@@ -1986,29 +2012,6 @@ section {
   .service .benefits__item {
     margin-right: 20px;
   }
-  .service__btn {
-    display: block;
-    width: 254px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-    letter-spacing: -0.01em;
-    margin: 0 auto;
-    margin-bottom: 40px;
-  }
-  .service__btn::before {
-    left: -9px;
-  }
-}
-@media (max-width: 1090px) {
-  .service .page-count {
-    font-weight: 500;
-    font-size: 26px;
-    line-height: 30px;
-    top: 23px;
-    right: 14px;
-  }
 }
 @media (max-width: 1025px) {
   .service .center-block__text {
@@ -2028,24 +2031,26 @@ section {
   }
 }
 @media (max-width: 990px) {
-  .service {
-    padding-top: 0;
-  }
   .service .container {
     padding-right: 0;
+    padding-bottom: 130px;
   }
   .service .center-block {
     background: none;
-    width: 360px;
-    height: 360px;
+    max-width: 582px;
+    width: 100%;
+    height: 778px;
     left: 0;
-    top: 234px;
+    top: 285px;
     background: rgba(255, 255, 255, 0.78);
   }
   .service .center-block__text {
-    top: 55px;
-    left: 20px;
+    top: 148px;
+    left: 88px;
     display: block;
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
   }
   .service__inner {
     -webkit-box-orient: vertical;
@@ -2053,19 +2058,18 @@ section {
         -ms-flex-direction: column;
             flex-direction: column;
     flex-direction: column-reverse;
-    padding: 0 10px;
-    padding-top: 234px;
+    padding: 0 30px;
+    padding-top: 285px;
   }
   .service__img-right {
-    height: 360px;
+    height: 778px;
     display: block;
     margin: 0 auto;
     width: 100%;
-    margin-bottom: 61px;
+    margin-bottom: 36px;
   }
   .service__left {
     padding: 0;
-    padding-left: 50px;
   }
   .service .service__title {
     display: none;
@@ -2076,15 +2080,40 @@ section {
   .service .service__title_mobile {
     display: block;
     position: absolute;
-    top: 31px;
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: 0.02em;
+    top: 50px;
     left: 22px;
   }
   .service .service__text_mobile {
     display: block;
     position: absolute;
-    top: 100px;
-    left: 10px;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.085em;
+    top: 140px;
+    left: 28px;
+    padding-right: 83px;
     color: #d18929;
+  }
+  .service .benefits {
+    margin-bottom: 0;
+  }
+  .service .benefits__item {
+    margin-bottom: 44px;
+  }
+  .service .benefits__item img {
+    margin-bottom: 23px;
+  }
+  .service__btn {
+    position: absolute;
+    margin: 0;
+    bottom: 43px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 }
 @media (max-width: 720px) {
@@ -5046,14 +5075,6 @@ section {
 
 }
 
- @media (max-width: 1090px){
-
-@supports (-webkit-appearance:none){
-
-}
-
-}
-
  @media (max-width: 1025px){
 
 @supports (-webkit-appearance:none){
@@ -5159,6 +5180,14 @@ section {
 }
 
  @media (max-width: 1210px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 1090px){
 
 @supports (-webkit-appearance:none){
 
