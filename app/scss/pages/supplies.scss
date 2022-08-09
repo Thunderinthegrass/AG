@@ -1,7 +1,7 @@
 .supplies {
   font-size: 25px;
   padding-top: 0;
-  padding-bottom: 60px;
+  padding-bottom: 56px;
   .container{
     padding-bottom: 57px;
   }
@@ -23,7 +23,6 @@
       transform: translateX(-50%);
       margin-top: -20px;
       margin-left: 0;
-      font-weight: 600;
       font-size: 31.168px;
       line-height: 37px;
       text-align: center;
@@ -71,7 +70,7 @@
       width: 386px;
       height: 6px;
       background: #d18929;
-      left: -30px;
+      left: -15px;
       bottom: -73px;
     }
   }
@@ -79,7 +78,6 @@
     padding-left: 26px;
     margin-bottom: 38px;
     &-title {
-      font-weight: 600;
       font-size: 34.383px;
       line-height: 41px;
       letter-spacing: 0.02em;
@@ -87,6 +85,9 @@
       margin-bottom: 22px;
       padding-left: 68px;
       padding-top: 23px;
+      p{
+        display: inline;
+      }
       &_mobile {
         display: none;
       }
@@ -95,11 +96,11 @@
       position: relative;
       max-width: 540px;
       width: 100%;
-      font-weight: 400;
       font-size: 20px;
       line-height: 128.19%;
       letter-spacing: 0.02em;
       margin-bottom: 36px;
+      padding-right: 30px;
       &::before {
         position: absolute;
         content: "";
@@ -115,7 +116,6 @@
   }
   .list {
     position: relative;
-    font-weight: 700;
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0.01em;
@@ -156,7 +156,6 @@
       width: 100%;
       padding-top: 60px;
       &-list {
-        font-weight: 500;
         font-size: 36px;
         letter-spacing: 0.01em;
         text-transform: uppercase;
@@ -180,7 +179,6 @@
     &__link {
       position: relative;
       padding-left: 52px;
-      font-weight: 600;
       font-size: 36px;
       letter-spacing: 0.01em;
       text-transform: uppercase;
@@ -199,7 +197,6 @@
     }
     &__title {
       position: relative;
-      font-weight: 600;
       font-size: 38.8737px;
       line-height: 51px;
       letter-spacing: 0.025em;
@@ -213,7 +210,7 @@
         width: 279px;
         height: 6px;
         background: #d18929;
-        left: -36px;
+        left: -21px;
         bottom: -12px;
       }
     }

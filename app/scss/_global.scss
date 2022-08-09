@@ -59,4 +59,9 @@ section {
   font-size: 104.471px;
   line-height: 125px;
   color: #d18929;
+  @media (max-width: 500px) {
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 31px;
+  }
 }

@@ -1,6 +1,6 @@
 .header {
   @media (max-width: 1260px) {
-    padding: 10px 10px 0;
+    padding: 10px 15px 0;
     .header__nav {
       display: none;
     }
@@ -72,6 +72,10 @@
       max-width: 400px;
       padding-left: 14px;
     }
+    @media (max-width: 600px){
+      background: none;
+      padding-left: 0;
+    }
   }
   &__contact {
     @media (max-width: 1870px) {
@@ -117,6 +121,12 @@
       }
       &:last-child{
         margin-bottom: 0;
+      }
+    }
+    @media (max-width: 600px){
+      &::before,
+      &::after{
+        left: -15px;
       }
     }
     @media (max-width: 536px) {
