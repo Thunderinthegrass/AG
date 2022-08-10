@@ -47,6 +47,7 @@
     &:nth-child(1),
     &:nth-child(2) {
       margin-right: 70px;
+      margin-bottom: 22px;
     }
     &:nth-child(4) {
       margin-right: 84px;
@@ -236,7 +237,7 @@
         background-size: cover;
         background-position: center;
         top: -22px;
-        left: -24px;
+        left: -35px;
       }
       &::after {
         position: absolute;
