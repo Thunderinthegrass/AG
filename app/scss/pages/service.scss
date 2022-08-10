@@ -130,6 +130,10 @@
         color: #d18929;
       }
     }
+    &_mobile{
+      display: none;
+      background: rgba(255, 255, 255, 0.78);
+    }
   }
   &__img-right {
     width: 532px;
