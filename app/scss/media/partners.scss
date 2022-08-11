@@ -23,10 +23,10 @@
     }
   }
   @media (max-width: 1580px) {
-    &__wrapper {
-      flex-direction: column;
-      align-items: center;
-    }
+    // &__wrapper {
+    //   flex-direction: column;
+    //   align-items: center;
+    // }
     &__left {
       max-width: 100%;
       margin-right: 0;
@@ -44,6 +44,10 @@
   }
   @media (max-width: 1425px) {
     padding-bottom: 35px;
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
   }
   @media (max-width: 1260px) {
     padding-left: 15px;
