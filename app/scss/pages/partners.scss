@@ -6,7 +6,6 @@
     display: flex;
   }
   &__title {
-    font-weight: 600;
     font-size: 42px;
     line-height: 51px;
     letter-spacing: 0.02em;
@@ -143,10 +142,8 @@
   }
   .right {
     .partners__title {
-      font-weight: 600 !important;
       margin-bottom: 15px;
       margin-left: 0;
-      font-weight: 500;
       font-size: 42px;
       line-height: 50px;
       letter-spacing: 0.02em;
@@ -186,7 +183,6 @@
     }
   }
   .page-count {
-    font-weight: 300;
     font-size: 94.3297px;
     line-height: 113px;
     right: 41.7%;
