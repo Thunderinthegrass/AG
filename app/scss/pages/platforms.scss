@@ -1,11 +1,43 @@
 .platforms {
   padding-top: 0;
   padding-bottom: 60px;
+  &__content {
+    display: flex;
+  }
+  &__title {
+    margin-top: 20px;
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: 0.02em;
+    margin-bottom: 30px;
+    &-wrapper {
+      position: absolute;
+      left: 227px;
+    }
+  }
   &__left {
     position: relative;
+    display: flex;
+    max-width: 786px;
+    width: 100%;
+    &-text {
+      font-size: 24px;
+      line-height: 29px;
+      letter-spacing: 0.02em;
+      padding-right: 110px;
+      margin-bottom: 30px;
+    }
+    &-title {
+      font-size: 22px;
+      line-height: 26px;
+      letter-spacing: 0.02em;
+      text-align: center;
+      max-width: 456px;
+      width: 100%;
+    }
     &-inner {
       display: flex;
-      background: rgba(0, 0, 0, 0.26);
+      background: rgba(238, 234, 234, 0.26);
     }
     &-img {
       background-image: url(../../img/platforms/image.jpg);
@@ -15,17 +47,84 @@
     }
     &-items {
       padding-top: 367px;
+      padding-left: 80px;
+      padding-right: 90px;
+    }
+    .platforms__item {
+      position: relative;
+      margin-bottom: 53px;
+      img {
+        max-width: 134px;
+      }
+      &-text {
+        margin-left: 26px;
+      }
+      &::before {
+        position: absolute;
+        content: "";
+        width: 4px;
+        height: 110px;
+        background: #d18929;
+        top: 0;
+        left: -30px;
+      }
+      &-count {
+        position: absolute;
+        font-size: 30px;
+        line-height: 36px;
+        color: #d18929;
+        top: -4px;
+        left: -68px;
+      }
     }
   }
-  &__title {
-    margin-top: 20px;
-    font-weight: 300;
-    font-size: 42px;
-    line-height: 50px;
-    letter-spacing: 0.02em;
-    &-wrapper {
-      position: absolute;
-      left: 227px;
+  &__right {
+    &-title {
+      margin-top: 48px;
+      margin-bottom: 56px;
+      font-size: 22px;
+      line-height: 26px;
+      letter-spacing: 0.02em;
+      max-width: 450px;
+      padding-left: 60px;
     }
+    &-items{
+      margin-left: 5px;
+    }
+    .platforms__item{
+      position: relative;
+      margin-bottom: 27px;
+      img{
+        max-width: 134px;
+      }
+      &-text{
+        padding-left: 30px;
+        padding-right: 100px;
+      }
+      &::before {
+        position: absolute;
+        content: "";
+        width: 4px;
+        height: 110px;
+        background: #d18929;
+        top: 0;
+        left: -30px;
+      }
+      &-count {
+        position: absolute;
+        font-size: 30px;
+        line-height: 36px;
+        color: #d18929;
+        top: -4px;
+        left: -68px;
+      }
+    }
+  }
+  &__item {
+    display: flex;
+  }
+  .page-count{
+    right: 39%;
+    top: 5px;
   }
 }
