@@ -1,6 +1,6 @@
 .team {
   @media (max-width: 1425px) {
-    padding-bottom: 30px;
+    padding-bottom: 35px;
     .team-logo {
       left: 50%;
       transform: translateX(-50%);
@@ -242,12 +242,6 @@
     }
   }
   @media (max-width: 710px) {
-    .page-count {
-      display: none;
-    }
-    .page-count_mobile {
-      display: block;
-    }
     &__members {
       &:nth-child(1) {
         margin-right: 0;
@@ -281,8 +275,8 @@
     }
   }
   @media (max-width: 500px) {
-    margin-top: 30px;
-    padding: 0 10px 30px;
+    margin-top: 35px;
+    padding: 0 10px 35px;
     .container {
       padding-top: 81px;
     }
@@ -387,6 +381,12 @@
           top: 77px;
         }
       }
+    }
+    .page-count {
+      display: none;
+    }
+    .page-count_mobile {
+      display: block;
     }
   }
   @media (max-width: 450px) {

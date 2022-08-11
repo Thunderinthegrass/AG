@@ -1,13 +1,13 @@
 .cases {
   padding-top: 0;
-  padding-bottom: 60px;
+  padding-bottom: 56px;
   .container {
     border: none;
   }
   &__slider-item:nth-child(1) {
     position: relative;
     border: 1px solid #000000;
-    margin-bottom: 60px;
+    margin-bottom: 56px;
     padding-bottom: 25px;
     .cases__title-wrapper {
       flex-direction: column;
@@ -169,6 +169,9 @@
       line-height: 114px;
       left: 56.5%;
       top: 20px;
+    }
+    &.d-block{
+      margin-top: 35px;
     }
   }
   &__title {

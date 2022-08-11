@@ -7,26 +7,12 @@
   @media (max-width: 1245px) {
     padding-right: 10px;
     .page-count {
-      // left: auto;
-      // font-size: 26px;
-      // line-height: 30px;
       top: 3px;
       right: 21px;
     }
     &__left {
       padding-left: 10px;
     }
-    // &__title {
-    //   font-size: 30px;
-    //   line-height: 35px;
-    //   letter-spacing: 0.02em;
-    //   max-width: 100%;
-    //   margin-left: 20px;
-    //   margin-bottom: 30px;
-    //   &::after{
-    //     display: none;
-    //   }
-    // }
     &__title {
       margin-left: 20px;
       margin-bottom: 45px;
@@ -174,7 +160,7 @@
     }
   }
   @media (max-width: 500px) {
-    padding: 30px 10px 0;
+    padding: 35px 10px 0;
     &__left{
       padding-top: 23px;
     }

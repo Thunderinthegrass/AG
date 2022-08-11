@@ -1,5 +1,5 @@
 .service {
-  padding-bottom: 60px;
+  padding-bottom: 56px;
   @media (max-width: 1785px) {
     &__btn {
       margin-bottom: 30px;
@@ -39,10 +39,10 @@
     }
   }
   @media (max-width: 1260px) {
-    padding-top: 30px;
+    padding-top: 35px;
     padding-right: 15px;
     padding-left: 15px;
-    padding-bottom: 30px;
+    padding-bottom: 35px;
     .container {
       border: 1px solid #000000;
     }
@@ -266,7 +266,7 @@
     }
   }
   @media (max-width: 500px) {
-    padding: 30px 10px 0;
+    padding: 35px 10px 0;
     &__inner{
       padding-top: 0;
     }
