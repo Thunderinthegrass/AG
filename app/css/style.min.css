@@ -702,7 +702,7 @@ section {
   height: 87px;
   left: -20px;
   top: -7px;
-  background-image: url(../../img/btn-left.svg);
+  background-image: url(../img/btn-left.svg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -712,7 +712,7 @@ section {
   content: "";
   width: 20px;
   height: 87px;
-  background-image: url(../../img/btn-right.svg);
+  background-image: url(../img/btn-right.svg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -1405,7 +1405,7 @@ section {
   height: 90px;
   left: -10px;
   top: -8px;
-  background-image: url(../../img/btn-left.svg);
+  background-image: url(../img/btn-left.svg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -1417,7 +1417,7 @@ section {
   height: 90px;
   right: -10px;
   top: -8px;
-  background-image: url(../../img/btn-right.svg);
+  background-image: url(../img/btn-right.svg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -1794,7 +1794,7 @@ section {
   height: 82px;
   left: -33px;
   top: -14px;
-  background-image: url(../../img/btn-left.svg);
+  background-image: url(../img/btn-left.svg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -1804,7 +1804,7 @@ section {
   content: "";
   width: 15px;
   height: 82px;
-  background-image: url(../../img/btn-right.svg);
+  background-image: url(../img/btn-right.svg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -3011,10 +3011,10 @@ section {
 }
 .team-logo_mobile {
   display: none;
-  background-image: url(/img/team/mobile/logo.svg);
+  background-image: url(../img/team/mobile/logo.svg);
 }
 .team-logo {
-  background-image: url(/img/team/logo.jpg);
+  background-image: url(../img/team/logo.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3117,7 +3117,7 @@ section {
   max-width: 748px;
   width: 100%;
   height: 269px;
-  background-image: url(/img/team/bottom-img.jpg);
+  background-image: url(../img/team/bottom-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -3135,7 +3135,7 @@ section {
   content: "";
   width: 214px;
   height: 65px;
-  background-image: url(../../img/team/lines-left.svg);
+  background-image: url(../img/team/lines-left.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
@@ -3158,7 +3158,7 @@ section {
   height: 562px;
   margin-bottom: 25px;
   position: relative;
-  background-image: url(/img/team/director.jpg);
+  background-image: url(../img/team/director.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -3257,7 +3257,7 @@ section {
   content: "";
   width: 40px;
   height: 31px;
-  background-image: url(../../img/team/quotes.svg);
+  background-image: url(../img/team/quotes.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -3269,7 +3269,7 @@ section {
   content: "";
   width: 40px;
   height: 31px;
-  background-image: url(../../img/team/quotes.svg);
+  background-image: url(../img/team/quotes.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -3899,9 +3899,11 @@ section {
   padding-right: 40px;
   margin-left: 81px;
 }
+.partners .right__img-wrapper .spark {
+  margin-bottom: 56px;
+}
 .partners .right__img-wrapper img:nth-child(1) {
   width: 400px;
-  margin-bottom: 56px;
 }
 .partners .right__img-wrapper img:nth-child(2) {
   width: 400px;
@@ -4319,6 +4321,9 @@ section {
     width: 282px;
     height: 52.24px;
   }
+  .partners .spark {
+    margin-bottom: 20px !important;
+  }
 }
 
 .platforms {
@@ -4374,7 +4379,7 @@ section {
   display: flex;
 }
 .platforms__left-img {
-  background-image: url(../../img/platforms/image.jpg);
+  background-image: url(../img/platforms/image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -4589,7 +4594,7 @@ section {
     max-width: 100%;
     width: 100%;
     height: 75px;
-    background-image: url(../../img/platforms/image-top.jpg);
+    background-image: url(../img/platforms/image-top.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -4869,6 +4874,9 @@ section {
 .footer .info__link-title {
   font-size: 30px;
   line-height: 36px;
+}
+.footer .info__link-title a {
+  color: #000;
 }
 .footer .copyright {
   text-align: center;
@@ -5179,24 +5187,24 @@ section {
 .mobile-menu__btn{background-image:url(../img/icons/menu.svg)}
 .mobile-menu__close-btn{background-image:url(../../img/icons/close.svg)}
 .supplies__img{background-image:url(../img/supplies-img.webp)}
-.supplies__right .basic__btn::before{background-image:url(../../img/btn-left.svg)}
-.supplies__right .basic__btn::after{background-image:url(../../img/btn-right.svg)}
+.supplies__right .basic__btn::before{background-image:url(../img/btn-left.svg)}
+.supplies__right .basic__btn::after{background-image:url(../img/btn-right.svg)}
 .delivery .descr__img{background-image:url(../img/delivery/delivery.webp)}
-.delivery .advantages__btn::before{background-image:url(../../img/btn-left.svg)}
-.delivery .advantages__btn::after{background-image:url(../../img/btn-right.svg)}
+.delivery .advantages__btn::before{background-image:url(../img/btn-left.svg)}
+.delivery .advantages__btn::after{background-image:url(../img/btn-right.svg)}
 .delivery__img-right{background-image:url(../img/delivery/delivery-img-right.webp)}
-.service__btn::before{background-image:url(../../img/btn-left.svg)}
-.service__btn::after{background-image:url(../../img/btn-right.svg)}
+.service__btn::before{background-image:url(../img/btn-left.svg)}
+.service__btn::after{background-image:url(../img/btn-right.svg)}
 .service__img-right{background-image:url(../img/service.webp)}
-.team-logo_mobile{background-image:url(/img/team/mobile/logo.svg)}
-.team-logo{background-image:url(/img/team/logo.webp)}
-.team__bottom-img{background-image:url(/img/team/bottom-img.webp)}
+.team-logo_mobile{background-image:url(../img/team/mobile/logo.svg)}
+.team-logo{background-image:url(../img/team/logo.webp)}
+.team__bottom-img{background-image:url(../img/team/bottom-img.webp)}
 .team__bottom-img_mobile{background-image:url(../img/team/mobile/bottom.webp)}
-.team__bottom-img::before{background-image:url(../../img/team/lines-left.svg)}
-.team__right-img{background-image:url(/img/team/director.webp)}
-.team__right .text::before{background-image:url(../../img/team/quotes.svg)}
-.team__right .text::after{background-image:url(../../img/team/quotes.svg)}
-.platforms__left-img{background-image:url(../../img/platforms/image.webp)}
+.team__bottom-img::before{background-image:url(../img/team/lines-left.svg)}
+.team__right-img{background-image:url(../img/team/director.webp)}
+.team__right .text::before{background-image:url(../img/team/quotes.svg)}
+.team__right .text::after{background-image:url(../img/team/quotes.svg)}
+.platforms__left-img{background-image:url(../img/platforms/image.webp)}
 }
 
  @media (max-width: 500px){
@@ -5682,7 +5690,7 @@ section {
  @media (max-width: 550px){
 
 @supports (-webkit-appearance:none){
-.platforms__top-img{background-image:url(../../img/platforms/image-top.webp)}
+.platforms__top-img{background-image:url(../img/platforms/image-top.webp)}
 }
 
 }

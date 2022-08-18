@@ -156,10 +156,12 @@
       align-items: center;
       padding-right: 40px;
       margin-left: 81px;
+      .spark{
+        margin-bottom: 56px;
+      }
       img {
         &:nth-child(1) {
           width: 400px;
-          margin-bottom: 56px;
         }
         &:nth-child(2) {
           width: 400px;
